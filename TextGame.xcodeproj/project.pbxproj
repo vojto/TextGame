@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76F9A0486AA7600D96B5E /* TextGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* TextGame.m */; settings = {ATTRIBUTES = (); }; };
+		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		8DD76F9F0486AA7600D96B5E /* TextGame.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* TextGame.1 */; };
+		9908EC5612829757008FC7B1 /* Command.h in Sources */ = {isa = PBXBuildFile; fileRef = 9908EC5412829757008FC7B1 /* Command.h */; };
+		9908EC5712829757008FC7B1 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9908EC5512829757008FC7B1 /* Command.m */; };
+		99518171127863D90035E6AA /* TextInterface.h in Sources */ = {isa = PBXBuildFile; fileRef = 9951816F127863D90035E6AA /* TextInterface.h */; };
+		99518172127863D90035E6AA /* TextInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 99518170127863D90035E6AA /* TextInterface.m */; };
+		9951817B127863FA0035E6AA /* Gamelike.h in Sources */ = {isa = PBXBuildFile; fileRef = 9951817A127863FA0035E6AA /* Gamelike.h */; };
+		995181A0127869F60035E6AA /* Backpacklike.h in Sources */ = {isa = PBXBuildFile; fileRef = 9951819F127869F60035E6AA /* Backpacklike.h */; };
+		995181A812789AED0035E6AA /* Game.h in Sources */ = {isa = PBXBuildFile; fileRef = 995181A612789AED0035E6AA /* Game.h */; };
+		995181A912789AED0035E6AA /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 995181A712789AED0035E6AA /* Game.m */; };
+		995181CB12789E3B0035E6AA /* Roomlike.h in Sources */ = {isa = PBXBuildFile; fileRef = 995181CA12789E3B0035E6AA /* Roomlike.h */; };
+		995181CD12789E440035E6AA /* Commandlike.h in Sources */ = {isa = PBXBuildFile; fileRef = 995181CC12789E440035E6AA /* Commandlike.h */; };
+		995181DF12789E860035E6AA /* Itemlike.h in Sources */ = {isa = PBXBuildFile; fileRef = 995181DE12789E860035E6AA /* Itemlike.h */; };
+		9960410512889BD6009515B1 /* HelpCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 9960410312889BD6009515B1 /* HelpCommand.h */; };
+		9960410612889BD6009515B1 /* HelpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9960410412889BD6009515B1 /* HelpCommand.m */; };
+		9960413F1288A2AD009515B1 /* QuitCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 9960413D1288A2AD009515B1 /* QuitCommand.h */; };
+		996041401288A2AD009515B1 /* QuitCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9960413E1288A2AD009515B1 /* QuitCommand.m */; };
+		996041F3128931A1009515B1 /* UnrecognizedCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 996041F1128931A1009515B1 /* UnrecognizedCommand.h */; };
+		996041F4128931A1009515B1 /* UnrecognizedCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 996041F2128931A1009515B1 /* UnrecognizedCommand.m */; };
+		9960420C12893CC5009515B1 /* GameState.h in Sources */ = {isa = PBXBuildFile; fileRef = 9960420B12893CC5009515B1 /* GameState.h */; };
+		9960423812893EF8009515B1 /* CommandRecognizer.h in Sources */ = {isa = PBXBuildFile; fileRef = 9960423612893EF8009515B1 /* CommandRecognizer.h */; };
+		9960423912893EF8009515B1 /* CommandRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9960423712893EF8009515B1 /* CommandRecognizer.m */; };
+		9960424B12893FFA009515B1 /* VersionCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 9960424912893FFA009515B1 /* VersionCommand.h */; };
+		9960424C12893FFA009515B1 /* VersionCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9960424A12893FFA009515B1 /* VersionCommand.m */; };
+		99C1F3B9128C90F20046778B /* CommandsCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3B7128C90F20046778B /* CommandsCommand.h */; };
+		99C1F3BA128C90F20046778B /* CommandsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3B8128C90F20046778B /* CommandsCommand.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F9F0486AA7600D96B5E /* TextGame.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* TextGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextGame.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32A70AAB03705E1F00C91783 /* TextGame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextGame_Prefix.pch; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* TextGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TextGame; sourceTree = BUILT_PRODUCTS_DIR; };
+		9908EC5412829757008FC7B1 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Command.h; sourceTree = "<group>"; };
+		9908EC5512829757008FC7B1 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		9951816F127863D90035E6AA /* TextInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = TextInterface.h; sourceTree = "<group>"; };
+		99518170127863D90035E6AA /* TextInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInterface.m; sourceTree = "<group>"; };
+		9951817A127863FA0035E6AA /* Gamelike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Gamelike.h; sourceTree = "<group>"; };
+		9951819F127869F60035E6AA /* Backpacklike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Backpacklike.h; sourceTree = "<group>"; };
+		995181A612789AED0035E6AA /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Game.h; sourceTree = "<group>"; };
+		995181A712789AED0035E6AA /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		995181CA12789E3B0035E6AA /* Roomlike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Roomlike.h; sourceTree = "<group>"; };
+		995181CC12789E440035E6AA /* Commandlike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Commandlike.h; sourceTree = "<group>"; };
+		995181DE12789E860035E6AA /* Itemlike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Itemlike.h; sourceTree = "<group>"; };
+		9960410312889BD6009515B1 /* HelpCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = HelpCommand.h; sourceTree = "<group>"; };
+		9960410412889BD6009515B1 /* HelpCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpCommand.m; sourceTree = "<group>"; };
+		9960413D1288A2AD009515B1 /* QuitCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = QuitCommand.h; sourceTree = "<group>"; };
+		9960413E1288A2AD009515B1 /* QuitCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitCommand.m; sourceTree = "<group>"; };
+		996041F1128931A1009515B1 /* UnrecognizedCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = UnrecognizedCommand.h; sourceTree = "<group>"; };
+		996041F2128931A1009515B1 /* UnrecognizedCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnrecognizedCommand.m; sourceTree = "<group>"; };
+		9960420B12893CC5009515B1 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = GameState.h; sourceTree = "<group>"; };
+		9960423612893EF8009515B1 /* CommandRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = CommandRecognizer.h; sourceTree = "<group>"; };
+		9960423712893EF8009515B1 /* CommandRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandRecognizer.m; sourceTree = "<group>"; };
+		9960424912893FFA009515B1 /* VersionCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = VersionCommand.h; sourceTree = "<group>"; };
+		9960424A12893FFA009515B1 /* VersionCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionCommand.m; sourceTree = "<group>"; };
+		99C1F3B7128C90F20046778B /* CommandsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = CommandsCommand.h; sourceTree = "<group>"; };
+		99C1F3B8128C90F20046778B /* CommandsCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandsCommand.m; sourceTree = "<group>"; };
+		C6859EA3029092ED04C91782 /* TextGame.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TextGame.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* TextGame */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859EA2029092E104C91782 /* Documentation */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = TextGame;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				995181A112789AB20035E6AA /* Classes */,
+				99518173127863E30035E6AA /* Protocols */,
+				32A70AAB03705E1F00C91783 /* TextGame_Prefix.pch */,
+				08FB7796FE84155DC02AAC07 /* TextGame.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* TextGame */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99518173127863E30035E6AA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9951817A127863FA0035E6AA /* Gamelike.h */,
+				9951819F127869F60035E6AA /* Backpacklike.h */,
+				995181CA12789E3B0035E6AA /* Roomlike.h */,
+				995181CC12789E440035E6AA /* Commandlike.h */,
+				995181DE12789E860035E6AA /* Itemlike.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		995181A112789AB20035E6AA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				99518170127863D90035E6AA /* TextInterface.m */,
+				9951816F127863D90035E6AA /* TextInterface.h */,
+				9960410212889BC7009515B1 /* Commands */,
+				995181A612789AED0035E6AA /* Game.h */,
+				995181A712789AED0035E6AA /* Game.m */,
+				9908EC5412829757008FC7B1 /* Command.h */,
+				9908EC5512829757008FC7B1 /* Command.m */,
+				9960420B12893CC5009515B1 /* GameState.h */,
+				9960423612893EF8009515B1 /* CommandRecognizer.h */,
+				9960423712893EF8009515B1 /* CommandRecognizer.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9960410212889BC7009515B1 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				9960410312889BD6009515B1 /* HelpCommand.h */,
+				9960410412889BD6009515B1 /* HelpCommand.m */,
+				9960413D1288A2AD009515B1 /* QuitCommand.h */,
+				9960413E1288A2AD009515B1 /* QuitCommand.m */,
+				996041F1128931A1009515B1 /* UnrecognizedCommand.h */,
+				996041F2128931A1009515B1 /* UnrecognizedCommand.m */,
+				9960424912893FFA009515B1 /* VersionCommand.h */,
+				9960424A12893FFA009515B1 /* VersionCommand.m */,
+				99C1F3B7128C90F20046778B /* CommandsCommand.h */,
+				99C1F3B8128C90F20046778B /* CommandsCommand.m */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		C6859EA2029092E104C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859EA3029092ED04C91782 /* TextGame.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F960486AA7600D96B5E /* TextGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "TextGame" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextGame;
+			productInstallPath = "$(HOME)/bin";
+			productName = TextGame;
+			productReference = 8DD76FA10486AA7600D96B5E /* TextGame */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "TextGame" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* TextGame */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* TextGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F9A0486AA7600D96B5E /* TextGame.m in Sources */,
+				99518171127863D90035E6AA /* TextInterface.h in Sources */,
+				99518172127863D90035E6AA /* TextInterface.m in Sources */,
+				9951817B127863FA0035E6AA /* Gamelike.h in Sources */,
+				995181A0127869F60035E6AA /* Backpacklike.h in Sources */,
+				995181A812789AED0035E6AA /* Game.h in Sources */,
+				995181A912789AED0035E6AA /* Game.m in Sources */,
+				995181CB12789E3B0035E6AA /* Roomlike.h in Sources */,
+				995181CD12789E440035E6AA /* Commandlike.h in Sources */,
+				995181DF12789E860035E6AA /* Itemlike.h in Sources */,
+				9908EC5612829757008FC7B1 /* Command.h in Sources */,
+				9908EC5712829757008FC7B1 /* Command.m in Sources */,
+				9960410512889BD6009515B1 /* HelpCommand.h in Sources */,
+				9960410612889BD6009515B1 /* HelpCommand.m in Sources */,
+				9960413F1288A2AD009515B1 /* QuitCommand.h in Sources */,
+				996041401288A2AD009515B1 /* QuitCommand.m in Sources */,
+				996041F3128931A1009515B1 /* UnrecognizedCommand.h in Sources */,
+				996041F4128931A1009515B1 /* UnrecognizedCommand.m in Sources */,
+				9960420C12893CC5009515B1 /* GameState.h in Sources */,
+				9960423812893EF8009515B1 /* CommandRecognizer.h in Sources */,
+				9960423912893EF8009515B1 /* CommandRecognizer.m in Sources */,
+				9960424B12893FFA009515B1 /* VersionCommand.h in Sources */,
+				9960424C12893FFA009515B1 /* VersionCommand.m in Sources */,
+				99C1F3B9128C90F20046778B /* CommandsCommand.h in Sources */,
+				99C1F3BA128C90F20046778B /* CommandsCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB927508733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TextGame_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = TextGame;
+			};
+			name = Debug;
+		};
+		1DEB927608733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TextGame_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = TextGame;
+			};
+			name = Release;
+		};
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "TextGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927508733DD40010E9CD /* Debug */,
+				1DEB927608733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "TextGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
