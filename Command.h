@@ -13,7 +13,9 @@
 
 
 @interface Command : NSObject <Commandlike> {
-
+	Game *game;
 }
+
+@property (retain) Game *game;
 
 @end

@@ -11,7 +11,7 @@
 
 @implementation UnrecognizedCommand
 
-- (GameState) execute:(id <Gamelike>)game {
+- (GameState) execute {
 	TextInterface *interface = [game textInterface];
 	NSString *command = [self.params objectAtIndex:0];
 	NSString *message = [NSString stringWithFormat:@"Unrecognized command: %@", command];

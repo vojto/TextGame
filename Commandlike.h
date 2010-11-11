@@ -14,7 +14,7 @@
 
 @protocol Commandlike
 
-- (GameState)execute:(id<Gamelike>)game;
+- (GameState)execute;
 
 @property (retain) NSArray *params;
 

@@ -11,7 +11,7 @@
 
 @implementation CommandsCommand
 
-- (GameState) execute:(id <Gamelike>)game {
+- (GameState) execute {
 	TextInterface *interface = [game textInterface];
 	CommandRecognizer *recognizer = [game commandRecognizer];
 	

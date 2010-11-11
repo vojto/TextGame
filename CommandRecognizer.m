@@ -41,6 +41,11 @@
 					 [NSArray arrayWithObjects:@"commands", @"prikazy", nil], @"triggers",
 					 @"CommandsCommand", @"className",
 					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Look around", @"description",
+					 [NSArray arrayWithObjects:@"look", nil], @"triggers",
+					 @"LookCommand", @"className",
+					 nil],
 					nil];
 	}
 	return self;

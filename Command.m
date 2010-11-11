@@ -11,6 +11,6 @@
 
 @implementation Command
 
-@synthesize params;
+@synthesize params, game;
 
 @end

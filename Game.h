@@ -10,14 +10,17 @@
 #import "Gamelike.h"
 #import "TextInterface.h"
 #import "CommandRecognizer.h"
+#import "World.h"
 
 @interface Game : NSObject <Gamelike> {
 	TextInterface *commandInterface;
 	GameState gameState;
 	CommandRecognizer *commandRecognizer;
+	World *world;
 }
 @property (retain) TextInterface *textInterface;
 @property (retain) CommandRecognizer *commandRecognizer;
+@property (retain) World *world;
 
 - (void) readCommand;
 

@@ -10,9 +10,7 @@
 
 @implementation HelpCommand;
 
-@synthesize params;
-
-- (GameState) execute:(id<Gamelike>) game {
+- (GameState) execute {
 	TextInterface *interface = [game textInterface];
 	[interface sendMessage:@"The Game has you."];
 	[interface sendMessage:@"Type commands to see what you can do here."];

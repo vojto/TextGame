@@ -11,7 +11,7 @@
 
 @implementation QuitCommand
 
-- (GameState) execute:(id<Gamelike>) game {
+- (GameState) execute {
 	TextInterface *interface = [game textInterface];
 	[interface sendMessage:@"Quitting now."];
 	if([self.params count] > 1) {

@@ -11,7 +11,7 @@
 
 @implementation VersionCommand
 
-- (GameState) execute:(id <Gamelike>)game {
+- (GameState) execute {
 	TextInterface *interface = [game textInterface];
 	[interface sendMessage:@"The Game v1.0"];
 	[interface sendMessage:@"Crafted by Vojto Rinik"];

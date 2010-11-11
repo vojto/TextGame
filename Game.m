@@ -11,15 +11,17 @@
 #import "UnrecognizedCommand.h"
 #import "GameState.h"
 #import "CommandRecognizer.h"
+#import "World.h"
 
 
 @implementation Game
 
-@synthesize textInterface, commandRecognizer;
+@synthesize textInterface, commandRecognizer, world;
 
 - (id) init {
 	if (self = [super init]) {
 		commandRecognizer = [[CommandRecognizer alloc] init];
+		world = [[World alloc] init];
 	}
 	return self;
 }
@@ -38,7 +40,8 @@
 	message = [textInterface readMessage];
 	id<Commandlike> command;
 	command = [self processCommand:message];
-	gameState = [command execute:self];
+	[command setGame:self];
+	gameState = [command execute];
 }
 
 - (id<Commandlike>) processCommand:(NSString *)message {

@@ -1,8 +1,8 @@
 //
-//  HelpCommand.h
+//  LookCommand.h
 //  TextGame
 //
-//  Created by Vojto on 8.11.2010.
+//  Created by Vojto on 12.11.2010.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 #import "Command.h"
 
 
-@interface HelpCommand : Command {
+@interface LookCommand : Command {
 
 }
 
