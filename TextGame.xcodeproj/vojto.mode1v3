@@ -202,6 +202,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>99C1F5BC128D7D2B0046778B</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>GoCommand.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>99C1F5BD128D7D2B0046778B</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>GoCommand.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>99C1F5BE128D7D2B0046778B</string>
+						<key>history</key>
+						<array>
+							<string>99C1F5A9128D7CB90046778B</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {883, 697}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>38 264 883 738 0 0 1680 1028 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>99C1F54F128D3E380046778B</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>Room.h</string>
@@ -216,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>99C1F595128D774B0046778B</string>
+						<string>99C1F5BF128D7D2B0046778B</string>
 						<key>history</key>
 						<array>
 							<string>99C1F533128D3D7D0046778B</string>
@@ -256,7 +296,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>99C1F596128D774B0046778B</string>
+						<string>99C1F5C0128D7D2B0046778B</string>
 						<key>history</key>
 						<array>
 							<string>99C1F515128D3BD40046778B</string>
@@ -357,7 +397,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>26</integer>
+									<integer>28</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -413,7 +453,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>99C1F594128D774B0046778B</string>
+										<string>99C1F5BB128D7D2B0046778B</string>
 										<key>history</key>
 										<array>
 											<string>995181F21278A0EA0035E6AA</string>
@@ -424,30 +464,32 @@
 											<string>99C1F503128D3B9F0046778B</string>
 											<string>99C1F504128D3B9F0046778B</string>
 											<string>99C1F505128D3B9F0046778B</string>
-											<string>99C1F506128D3B9F0046778B</string>
-											<string>99C1F507128D3B9F0046778B</string>
-											<string>99C1F509128D3B9F0046778B</string>
-											<string>99C1F50A128D3B9F0046778B</string>
 											<string>99C1F51C128D3C5C0046778B</string>
 											<string>99C1F51E128D3C5C0046778B</string>
 											<string>99C1F51F128D3C5C0046778B</string>
 											<string>99C1F520128D3C5C0046778B</string>
 											<string>99C1F521128D3C5C0046778B</string>
 											<string>99C1F522128D3C5C0046778B</string>
-											<string>99C1F524128D3C5C0046778B</string>
 											<string>99C1F525128D3C5C0046778B</string>
 											<string>99C1F526128D3C5C0046778B</string>
 											<string>99C1F527128D3C5C0046778B</string>
-											<string>99C1F545128D3E380046778B</string>
 											<string>99C1F547128D3E380046778B</string>
 											<string>99C1F548128D3E380046778B</string>
-											<string>99C1F54B128D3E380046778B</string>
-											<string>99C1F570128D6BDD0046778B</string>
 											<string>99C1F583128D76C80046778B</string>
 											<string>99C1F584128D76C80046778B</string>
-											<string>99C1F585128D76C80046778B</string>
-											<string>99C1F58D128D770E0046778B</string>
-											<string>99C1F58E128D770E0046778B</string>
+											<string>99C1F5AE128D7D2B0046778B</string>
+											<string>99C1F5AF128D7D2B0046778B</string>
+											<string>99C1F5B0128D7D2B0046778B</string>
+											<string>99C1F5B1128D7D2B0046778B</string>
+											<string>99C1F5B2128D7D2B0046778B</string>
+											<string>99C1F5B3128D7D2B0046778B</string>
+											<string>99C1F5B4128D7D2B0046778B</string>
+											<string>99C1F5B5128D7D2B0046778B</string>
+											<string>99C1F5B6128D7D2B0046778B</string>
+											<string>99C1F5B7128D7D2B0046778B</string>
+											<string>99C1F5B8128D7D2B0046778B</string>
+											<string>99C1F5B9128D7D2B0046778B</string>
+											<string>99C1F5BA128D7D2B0046778B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -645,13 +687,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>99C1F597128D774B0046778B</string>
 		<string>99C1F55A128D3E380046778B</string>
 		<string>99C1F55B128D3E380046778B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>99C1F52C128D3C5C0046778B</string>
-		<string>99FE97E71275880D00F0E27A</string>
 		<string>99C1F54F128D3E380046778B</string>
+		<string>99FE97E71275880D00F0E27A</string>
+		<string>99C1F5BC128D7D2B0046778B</string>
 		<string>/Users/vojto/Documents/Coding/Cocoa/TextGame/TextGame.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
 	</array>
@@ -677,7 +719,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LookCommand.m</string>
+								<string>GoCommand.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

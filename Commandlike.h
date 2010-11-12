@@ -8,12 +8,8 @@
 
 #import "GameState.h"
 
-@protocol Gamelike;
-
 @protocol Commandlike
 
 - (GameState)execute;
-
-@property (retain) NSArray *params;
 
 @end

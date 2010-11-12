@@ -15,8 +15,10 @@
 
 @interface Command : NSObject <Commandlike> {
 	Game *game;
+	NSArray *params;
 }
 
 @property (retain) Game *game;
+@property (retain) NSArray *params;
 
 @end

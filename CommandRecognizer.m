@@ -41,6 +41,11 @@
 					 [NSArray arrayWithObjects:@"look", @"l", nil], @"triggers",
 					 @"LookCommand", @"className",
 					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Go in a direction", @"description",
+					 [NSArray arrayWithObjects:@"go", @"g", nil], @"triggers",
+					 @"GoCommand", @"className",
+					 nil],
 					nil];
 	}
 	return self;

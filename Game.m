@@ -32,10 +32,7 @@
 - (void) readCommand {
 	NSString *message;
 	message = [textInterface readMessage];
-	id<Commandlike> command;
-	command = [self processCommand:message];
-	[command setGame:self];
-	gameState = [command execute];
+	[self executeCommand:[self processCommand:message]];
 }
 
 - (id<Commandlike>) processCommand:(NSString *)message {
@@ -47,6 +44,11 @@
 	[command setParams:params];
 
 	return command;
+}
+
+- (void) executeCommand:(id<Commandlike>)command {
+	[command setGame:self];
+	gameState = [command execute];
 }
  
 

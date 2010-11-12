@@ -23,5 +23,7 @@
 @property (retain) World *world;
 
 - (void) readCommand;
+- (id<Commandlike>) processCommand:(NSString *)message;
+- (void) executeCommand:(id<Commandlike>)command;
 
 @end

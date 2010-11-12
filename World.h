@@ -13,6 +13,6 @@
 	Room *currentRoom;
 }
 
-@property (retain) Room *currentRoom;
+@property (assign) Room *currentRoom;
 
 @end
