@@ -6,11 +6,12 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import "Commandlike.h"
-#import "Game.h"
+#import "CommandRecognizer.h"
 #import "TextInterface.h"
+#import "World.h"
 
+@class Game;
 
 @interface Command : NSObject <Commandlike> {
 	Game *game;

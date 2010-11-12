@@ -6,13 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "Game.h"
-#import "Command.h"
-#import "UnrecognizedCommand.h"
-#import "GameState.h"
-#import "CommandRecognizer.h"
-#import "World.h"
-
+#include "Game.h"
 
 @implementation Game
 

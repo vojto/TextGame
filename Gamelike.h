@@ -6,10 +6,8 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import "Backpacklike.h"
 #import "Roomlike.h"
-#import "Commandlike.h"
 
 @protocol Commandlike;
 

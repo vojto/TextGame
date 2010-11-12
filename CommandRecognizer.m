@@ -7,12 +7,7 @@
 //
 
 #import "CommandRecognizer.h"
-#import "Commandlike.h"
-#import "HelpCommand.h"
-#import "QuitCommand.h"
 #import "UnrecognizedCommand.h"
-#import "VersionCommand.h"
-
 
 @implementation CommandRecognizer
 
@@ -43,7 +38,7 @@
 					 nil],
 					[NSDictionary dictionaryWithObjectsAndKeys:
 					 @"Look around", @"description",
-					 [NSArray arrayWithObjects:@"look", nil], @"triggers",
+					 [NSArray arrayWithObjects:@"look", @"l", nil], @"triggers",
 					 @"LookCommand", @"className",
 					 nil],
 					nil];

@@ -8,7 +8,6 @@
 
 #import "QuitCommand.h"
 
-
 @implementation QuitCommand
 
 - (GameState) execute {

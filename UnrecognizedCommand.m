@@ -8,7 +8,6 @@
 
 #import "UnrecognizedCommand.h"
 
-
 @implementation UnrecognizedCommand
 
 - (GameState) execute {

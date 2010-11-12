@@ -38,7 +38,6 @@
 		99C1F3EA128CA3F60046778B /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3E8128CA3F60046778B /* World.m */; };
 		99C1F3FA128CA9A30046778B /* Room.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3F8128CA9A30046778B /* Room.h */; };
 		99C1F3FB128CA9A30046778B /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3F9128CA9A30046778B /* Room.m */; };
-		99C1F40C128CABD70046778B /* RoomExit.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F40B128CABD70046778B /* RoomExit.h */; };
 		99C1F43D128CAFB10046778B /* LookCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F43B128CAFB10046778B /* LookCommand.h */; };
 		99C1F43E128CAFB10046778B /* LookCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F43C128CAFB10046778B /* LookCommand.m */; };
 /* End PBXBuildFile section */
@@ -89,7 +88,6 @@
 		99C1F3E8128CA3F60046778B /* World.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = World.m; sourceTree = "<group>"; };
 		99C1F3F8128CA9A30046778B /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Room.h; sourceTree = "<group>"; };
 		99C1F3F9128CA9A30046778B /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
-		99C1F40B128CABD70046778B /* RoomExit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = RoomExit.h; sourceTree = "<group>"; };
 		99C1F43B128CAFB10046778B /* LookCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = LookCommand.h; sourceTree = "<group>"; };
 		99C1F43C128CAFB10046778B /* LookCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookCommand.m; sourceTree = "<group>"; };
 		C6859EA3029092ED04C91782 /* TextGame.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TextGame.1; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				99C1F3E8128CA3F60046778B /* World.m */,
 				99C1F3F8128CA9A30046778B /* Room.h */,
 				99C1F3F9128CA9A30046778B /* Room.m */,
-				99C1F40B128CABD70046778B /* RoomExit.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -278,7 +275,6 @@
 				99C1F3EA128CA3F60046778B /* World.m in Sources */,
 				99C1F3FA128CA9A30046778B /* Room.h in Sources */,
 				99C1F3FB128CA9A30046778B /* Room.m in Sources */,
-				99C1F40C128CABD70046778B /* RoomExit.h in Sources */,
 				99C1F43D128CAFB10046778B /* LookCommand.h in Sources */,
 				99C1F43E128CAFB10046778B /* LookCommand.m in Sources */,
 			);

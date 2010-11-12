@@ -6,19 +6,20 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import "RoomExit.h"
-
-
 @interface Room : NSObject {
 	NSString *name;
 	NSString *description;
-	NSMutableArray *exits;
+	Room *northExit;
+	Room *southExit;
+	Room *westExit;
+	Room *eastExit;
 }
 
 @property (retain) NSString *name;
 @property (retain) NSString *description;
-
-- (void) setRoom:(Room *)room forExit:(RoomExit)exit;
+@property (retain) Room *northExit;
+@property (retain) Room *southExit;
+@property (retain) Room *westExit;
+@property (retain) Room *eastExit;
 
 @end

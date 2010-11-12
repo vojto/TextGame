@@ -6,9 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import "Commandlike.h"
-
 
 @interface CommandRecognizer : NSObject {
 	NSArray *commands;

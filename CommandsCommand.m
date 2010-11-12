@@ -8,7 +8,6 @@
 
 #import "CommandsCommand.h"
 
-
 @implementation CommandsCommand
 
 - (GameState) execute {

@@ -6,10 +6,10 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import "Gamelike.h"
-#import "TextInterface.h"
 #import "CommandRecognizer.h"
+#import "Gamelike.h"
+#import "GameState.h"
+#import "TextInterface.h"
 #import "World.h"
 
 @interface Game : NSObject <Gamelike> {

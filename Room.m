@@ -7,16 +7,10 @@
 //
 
 #import "Room.h"
-#import "RoomExit.h"
-
 
 @implementation Room
 
 @synthesize name, description;
-
-- (void) setRoom:(Room *)room forExit:(RoomExit)exit {
-	[exits removeObjectAtIndex:exit];
-	[exits insertObject:room atIndex:exit];
-}
+@synthesize northExit, southExit, westExit, eastExit;
 
 @end

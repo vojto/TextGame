@@ -8,7 +8,6 @@
 
 #import "TextInterface.h"
 
-
 @implementation TextInterface
 
 @synthesize delegate;

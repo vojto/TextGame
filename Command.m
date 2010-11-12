@@ -8,7 +8,6 @@
 
 #import "Command.h"
 
-
 @implementation Command
 
 @synthesize params, game;

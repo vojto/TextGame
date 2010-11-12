@@ -7,9 +7,6 @@
 //
 
 #import "World.h"
-#import "Room.h"
-#import "RoomExit.h"
-
 
 @implementation World
 
@@ -19,7 +16,7 @@
 	if (self = [super init]) {
 		// World Map
 		Room *forest = [[Room alloc] init];
-		[forest setName:@"Elwynn Forest"];
+		[forest setName:@"Forest"];
 		[forest setDescription:@"You see beautiful forest everywhere you look ..."];
 		[rooms addObject:forest];
 		
@@ -28,7 +25,12 @@
 		[city setDescription:@"You feel the glory of the city ..."];
 		[rooms addObject:city];
 		
-		[forest setRoom:city forExit:RoomExitNorth];
+		Room *river = [[Room alloc] init];
+		[river setName:@"River"];
+		[river setDescription:@"You're at the river."];
+		
+		[forest setNorthExit:city];
+		[forest setSouthExit:river];
 		
 		// Current Room
 		currentRoom = forest;

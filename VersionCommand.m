@@ -8,7 +8,6 @@
 
 #import "VersionCommand.h"
 
-
 @implementation VersionCommand
 
 - (GameState) execute {
