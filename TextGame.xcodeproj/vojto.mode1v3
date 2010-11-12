@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>99C1F5BE128D7D2B0046778B</string>
+						<string>99C1F5D2128D84290046778B</string>
 						<key>history</key>
 						<array>
 							<string>99C1F5A9128D7CB90046778B</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>99C1F5BF128D7D2B0046778B</string>
+						<string>99C1F5D3128D84290046778B</string>
 						<key>history</key>
 						<array>
 							<string>99C1F533128D3D7D0046778B</string>
@@ -296,7 +296,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>99C1F5C0128D7D2B0046778B</string>
+						<string>99C1F5D4128D84290046778B</string>
 						<key>history</key>
 						<array>
 							<string>99C1F515128D3BD40046778B</string>
@@ -350,6 +350,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -397,7 +399,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>28</integer>
+									<integer>30</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -434,14 +436,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>World.m</string>
+								<string>Room.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -449,11 +449,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>World.m</string>
+										<string>Room.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>99C1F5BB128D7D2B0046778B</string>
+										<string>99C1F5D1128D84290046778B</string>
 										<key>history</key>
 										<array>
 											<string>995181F21278A0EA0035E6AA</string>
@@ -475,7 +475,6 @@
 											<string>99C1F527128D3C5C0046778B</string>
 											<string>99C1F547128D3E380046778B</string>
 											<string>99C1F548128D3E380046778B</string>
-											<string>99C1F583128D76C80046778B</string>
 											<string>99C1F584128D76C80046778B</string>
 											<string>99C1F5AE128D7D2B0046778B</string>
 											<string>99C1F5AF128D7D2B0046778B</string>
@@ -489,7 +488,8 @@
 											<string>99C1F5B7128D7D2B0046778B</string>
 											<string>99C1F5B8128D7D2B0046778B</string>
 											<string>99C1F5B9128D7D2B0046778B</string>
-											<string>99C1F5BA128D7D2B0046778B</string>
+											<string>99C1F5CF128D84290046778B</string>
+											<string>99C1F5D0128D84290046778B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -694,8 +694,8 @@
 		<string>99C1F54F128D3E380046778B</string>
 		<string>99FE97E71275880D00F0E27A</string>
 		<string>99C1F5BC128D7D2B0046778B</string>
-		<string>/Users/vojto/Documents/Coding/Cocoa/TextGame/TextGame.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/vojto/Documents/Coding/Cocoa/TextGame/TextGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>656 209 1016 819 0 0 1680 1028 </string>

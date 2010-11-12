@@ -30,10 +30,7 @@
 		[river setDescription:@"You're at the river."];
 		
 		[forest setNorthExit:city];
-		[city setSouthExit:forest];
 		[forest setSouthExit:river];
-		[river setNorthExit:forest]; 
-		// TODO 2-way should be automatic
 		
 		// Current Room
 		currentRoom = forest;
