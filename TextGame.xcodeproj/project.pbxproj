@@ -42,6 +42,9 @@
 		99C1F43E128CAFB10046778B /* LookCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F43C128CAFB10046778B /* LookCommand.m */; };
 		99C1F59A128D79970046778B /* GoCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F598128D79970046778B /* GoCommand.h */; };
 		99C1F59B128D79970046778B /* GoCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F599128D79970046778B /* GoCommand.m */; };
+		99C1F5F8128DDE570046778B /* Item.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F5F6128DDE570046778B /* Item.h */; };
+		99C1F5F9128DDE570046778B /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F5F7128DDE570046778B /* Item.m */; };
+		99C1F636128F3AED0046778B /* Containable.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F635128F3AED0046778B /* Containable.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +97,9 @@
 		99C1F43C128CAFB10046778B /* LookCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookCommand.m; sourceTree = "<group>"; };
 		99C1F598128D79970046778B /* GoCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = GoCommand.h; sourceTree = "<group>"; };
 		99C1F599128D79970046778B /* GoCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoCommand.m; sourceTree = "<group>"; };
+		99C1F5F6128DDE570046778B /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Item.h; sourceTree = "<group>"; };
+		99C1F5F7128DDE570046778B /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		99C1F635128F3AED0046778B /* Containable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Containable.h; sourceTree = "<group>"; };
 		C6859EA3029092ED04C91782 /* TextGame.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TextGame.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +161,7 @@
 				995181CA12789E3B0035E6AA /* Roomlike.h */,
 				995181CC12789E440035E6AA /* Commandlike.h */,
 				995181DE12789E860035E6AA /* Itemlike.h */,
+				99C1F635128F3AED0046778B /* Containable.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -176,6 +183,8 @@
 				99C1F3E8128CA3F60046778B /* World.m */,
 				99C1F3F8128CA9A30046778B /* Room.h */,
 				99C1F3F9128CA9A30046778B /* Room.m */,
+				99C1F5F6128DDE570046778B /* Item.h */,
+				99C1F5F7128DDE570046778B /* Item.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -285,6 +294,9 @@
 				99C1F43E128CAFB10046778B /* LookCommand.m in Sources */,
 				99C1F59A128D79970046778B /* GoCommand.h in Sources */,
 				99C1F59B128D79970046778B /* GoCommand.m in Sources */,
+				99C1F5F8128DDE570046778B /* Item.h in Sources */,
+				99C1F5F9128DDE570046778B /* Item.m in Sources */,
+				99C1F636128F3AED0046778B /* Containable.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

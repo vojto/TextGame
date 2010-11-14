@@ -6,7 +6,10 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-@interface Room : NSObject {
+#import "Item.h"
+#import "Containable.h"
+
+@interface Room : NSObject <Containable> {
 	NSString *name;
 	NSString *description;
 	Room *northExit;

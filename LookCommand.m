@@ -40,6 +40,13 @@
 		[interface sendMessage:[NSString stringWithFormat:@"      East: %@", [exit name]]];
 	}
 	
+	// Items
+	[interface sendMessage:@"Items: "];
+	NSArray *items = [world itemsAt:currentRoom];
+	for (id item in [items objectEnumerator]) {
+		[interface sendMessage:[NSString stringWithFormat:@"      %@", [item name]]];
+	}
+	
 	return GameStatePlaying;
 }
 
