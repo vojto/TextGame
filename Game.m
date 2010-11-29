@@ -8,9 +8,20 @@
 
 #include "Game.h"
 
+static Game *sharedGame = nil;
+
 @implementation Game
 
 @synthesize textInterface, commandRecognizer, world, backpack;
+
++ (Game *) sharedGame {
+	@synchronized(self) {
+		if (sharedGame == nil) {
+			sharedGame = [[Game alloc] init];
+		}
+	}
+	return sharedGame;
+}
 
 - (id) init {
 	if (self = [super init]) {

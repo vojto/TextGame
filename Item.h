@@ -18,4 +18,6 @@ NSString *description;
 @property (retain) NSString *name;
 @property (retain) NSString *description;
 
+- (void) useWithArguments:(NSArray *)arguments;
+
 @end

@@ -6,15 +6,15 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "Itemlike.h"
+#import "Item.h"
 
 @protocol Backpacklike
 
 // Adding and removing items
--(BOOL)addItem:(id<Itemlike>)item;
--(id<Itemlike>)itemWithName:(NSString *)itemName;
--(void)removeItem:(id<Itemlike>)item;
--(id<Itemlike>)removeItemWithName:(NSString *)itemName;
+-(BOOL)addItem:(Item *)item;
+-(Item *)itemWithName:(NSString *)itemName;
+-(void)removeItem:(Item *)item;
+-(Item *)removeItemWithName:(NSString *)itemName;
 
 // Sizes
 -(NSInteger)capacity;

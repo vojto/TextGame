@@ -7,10 +7,18 @@
 //
 
 #import "Item.h"
-
+#import "Game.h"
 
 @implementation Item
 
 @synthesize name, description;
+
+- (void) useWithArguments:(NSArray *)arguments {
+	Game *game = [Game sharedGame];
+	TextInterface *interface = [game textInterface];
+	Backpack *backpack = [game backpack];
+	
+	[interface sendMessage:description];
+}
 
 @end

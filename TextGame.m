@@ -7,7 +7,7 @@ int main (int argc, const char * argv[]) {
 	// Initialize new TextInterface
     TextInterface *textInterface = [[TextInterface alloc] init];
 	// Initialize new Game
-	Game *game = [[Game alloc] init];
+	Game *game = [Game sharedGame];
 
 	[game setTextInterface:textInterface];
 	

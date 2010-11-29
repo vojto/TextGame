@@ -25,6 +25,8 @@
 @property (retain) World *world;
 @property (retain) Backpack *backpack;
 
++ (Game *) sharedGame;
+
 - (void) readCommand;
 - (id<Commandlike>) processCommand:(NSString *)message;
 - (void) executeCommand:(id<Commandlike>)command;

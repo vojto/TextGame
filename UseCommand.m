@@ -25,10 +25,10 @@
 		return GameStatePlaying;
 	}
 	
-	id<Itemlike> item = [backpack itemWithName:itemName];
+	Item *item = [backpack itemWithName:itemName];
 	
 	if (item) {
-		[item use];
+		[item useWithArguments:otherArguments];
 	} else {
 		[textInterface sendMessage:[NSString stringWithFormat:@"There's no item with name %@ in your backpack.", itemName]];
 	}
