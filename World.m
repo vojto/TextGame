@@ -8,6 +8,7 @@
 
 #import "World.h"
 #import "Item.h"
+#import "Backpack.h"
 
 @implementation World
 
@@ -15,9 +16,6 @@
 
 - (id) init {
 	if (self = [super init]) {
-		// Initialize variables
-		items = [[NSMutableArray alloc] init];
-		
 		[self prepareWorld];
 	}
 	return self;
@@ -47,9 +45,9 @@
 	
 	// Items
 	Item *lockedChest = [[Item alloc] init];
-	[lockedChest setName:@"Locked Chest"];
+	[lockedChest setName:@"LockedChest"];
 	[lockedChest setDescription:@"This chest is locked."];
-	[self addItem:lockedChest at:forest];
+	[forest addItem:lockedChest];
 	
 	Item *chest = [[Item alloc] init];
 	[chest setName:@"Chest"];

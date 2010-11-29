@@ -46,6 +46,21 @@
 					 [NSArray arrayWithObjects:@"go", @"g", nil], @"triggers",
 					 @"GoCommand", @"className",
 					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Use some item", @"description",
+					 [NSArray arrayWithObjects:@"use", @"u", nil], @"triggers",
+					 @"UseCommand", @"className",
+					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Take something", @"description",
+					 [NSArray arrayWithObjects:@"take", @"t", nil], @"triggers",
+					 @"TakeCommand", @"className",
+					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Show stuff in your inventory", @"description",
+					 [NSArray arrayWithObjects:@"inventory", @"backpack", @"bp", nil], @"triggers",
+					 @"InventoryCommand", @"className",
+					 nil],
 					nil];
 	}
 	return self;

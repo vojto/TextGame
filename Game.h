@@ -11,16 +11,19 @@
 #import "GameState.h"
 #import "TextInterface.h"
 #import "World.h"
+#import "Backpack.h"
 
 @interface Game : NSObject <Gamelike> {
 	TextInterface *commandInterface;
 	GameState gameState;
 	CommandRecognizer *commandRecognizer;
 	World *world;
+	Backpack *backpack;
 }
 @property (retain) TextInterface *textInterface;
 @property (retain) CommandRecognizer *commandRecognizer;
 @property (retain) World *world;
+@property (retain) Backpack *backpack;
 
 - (void) readCommand;
 - (id<Commandlike>) processCommand:(NSString *)message;

@@ -16,6 +16,7 @@
 	Room *southExit;
 	Room *westExit;
 	Room *eastExit;
+	NSMutableArray *items;
 }
 
 @property (retain) NSString *name;
@@ -24,5 +25,10 @@
 @property (retain) Room *southExit;
 @property (retain) Room *westExit;
 @property (retain) Room *eastExit;
+@property (retain) NSMutableArray *items;
+
+- (void) addItem:(Item *)item;
+- (Item *) itemWithName:(NSString *)name;
+- (void) removeItem:(Item *)item;
 
 @end

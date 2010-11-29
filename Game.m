@@ -10,12 +10,13 @@
 
 @implementation Game
 
-@synthesize textInterface, commandRecognizer, world;
+@synthesize textInterface, commandRecognizer, world, backpack;
 
 - (id) init {
 	if (self = [super init]) {
 		commandRecognizer = [[CommandRecognizer alloc] init];
 		world = [[World alloc] init];
+		backpack = [[Backpack alloc] init];
 	}
 	return self;
 }

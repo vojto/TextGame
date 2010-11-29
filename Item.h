@@ -6,7 +6,9 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-@interface Item : NSObject {
+#import "Itemlike.h"
+
+@interface Item : NSObject <Itemlike> {
 
 NSString *name;
 NSString *description;

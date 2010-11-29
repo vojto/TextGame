@@ -11,8 +11,15 @@
 
 @implementation Room
 
-@synthesize name, description;
+@synthesize name, description, items;
 @synthesize northExit, southExit, eastExit, westExit;
+
+- (id) init {
+	if(self = [super init]) {
+		items = [[NSMutableArray alloc] init];
+	}
+	return self;
+}
 
 - (void) setNorthExit:(Room *)room {
 	northExit = room;
@@ -40,6 +47,23 @@
 	if ([room westExit] != self) {
 		[room setWestExit:self];
 	}
+}
+
+- (void) addItem:(Item *)item {
+	[items addObject:item];
+}
+
+- (Item *) itemWithName:(NSString *)itemName {
+	for (Item *item in [items objectEnumerator]) {
+		if ([[item name] isEqualToString:itemName]) {
+			return item;
+		}
+	}
+	return nil;
+}
+
+- (void) removeItem:(Item *)item {
+	[items removeObjectIdenticalTo:item];
 }
 
 @end

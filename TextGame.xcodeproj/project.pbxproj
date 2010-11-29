@@ -32,6 +32,14 @@
 		9960423912893EF8009515B1 /* CommandRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9960423712893EF8009515B1 /* CommandRecognizer.m */; };
 		9960424B12893FFA009515B1 /* VersionCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 9960424912893FFA009515B1 /* VersionCommand.h */; };
 		9960424C12893FFA009515B1 /* VersionCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9960424A12893FFA009515B1 /* VersionCommand.m */; };
+		9997B5C612A3BCB1006903EC /* UseCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 9997B5C412A3BCB1006903EC /* UseCommand.h */; };
+		9997B5C712A3BCB1006903EC /* UseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997B5C512A3BCB1006903EC /* UseCommand.m */; };
+		9997B5CA12A3BD56006903EC /* Backpack.h in Sources */ = {isa = PBXBuildFile; fileRef = 9997B5C812A3BD56006903EC /* Backpack.h */; };
+		9997B5CB12A3BD56006903EC /* Backpack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997B5C912A3BD56006903EC /* Backpack.m */; };
+		99AA90E112A44BDD002066E1 /* TakeCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99AA90DF12A44BDD002066E1 /* TakeCommand.h */; };
+		99AA90E212A44BDD002066E1 /* TakeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA90E012A44BDD002066E1 /* TakeCommand.m */; };
+		99AA914D12A458A9002066E1 /* InventoryCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99AA914B12A458A9002066E1 /* InventoryCommand.h */; };
+		99AA914E12A458A9002066E1 /* InventoryCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA914C12A458A9002066E1 /* InventoryCommand.m */; };
 		99C1F3B9128C90F20046778B /* CommandsCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3B7128C90F20046778B /* CommandsCommand.h */; };
 		99C1F3BA128C90F20046778B /* CommandsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3B8128C90F20046778B /* CommandsCommand.m */; };
 		99C1F3E9128CA3F60046778B /* World.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3E7128CA3F60046778B /* World.h */; };
@@ -87,6 +95,14 @@
 		9960423712893EF8009515B1 /* CommandRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandRecognizer.m; sourceTree = "<group>"; };
 		9960424912893FFA009515B1 /* VersionCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = VersionCommand.h; sourceTree = "<group>"; };
 		9960424A12893FFA009515B1 /* VersionCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionCommand.m; sourceTree = "<group>"; };
+		9997B5C412A3BCB1006903EC /* UseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = UseCommand.h; sourceTree = "<group>"; };
+		9997B5C512A3BCB1006903EC /* UseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCommand.m; sourceTree = "<group>"; };
+		9997B5C812A3BD56006903EC /* Backpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Backpack.h; sourceTree = "<group>"; };
+		9997B5C912A3BD56006903EC /* Backpack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Backpack.m; sourceTree = "<group>"; };
+		99AA90DF12A44BDD002066E1 /* TakeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = TakeCommand.h; sourceTree = "<group>"; };
+		99AA90E012A44BDD002066E1 /* TakeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeCommand.m; sourceTree = "<group>"; };
+		99AA914B12A458A9002066E1 /* InventoryCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = InventoryCommand.h; sourceTree = "<group>"; };
+		99AA914C12A458A9002066E1 /* InventoryCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryCommand.m; sourceTree = "<group>"; };
 		99C1F3B7128C90F20046778B /* CommandsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = CommandsCommand.h; sourceTree = "<group>"; };
 		99C1F3B8128C90F20046778B /* CommandsCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandsCommand.m; sourceTree = "<group>"; };
 		99C1F3E7128CA3F60046778B /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = World.h; sourceTree = "<group>"; };
@@ -185,6 +201,8 @@
 				99C1F3F9128CA9A30046778B /* Room.m */,
 				99C1F5F6128DDE570046778B /* Item.h */,
 				99C1F5F7128DDE570046778B /* Item.m */,
+				9997B5C812A3BD56006903EC /* Backpack.h */,
+				9997B5C912A3BD56006903EC /* Backpack.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -206,6 +224,12 @@
 				99C1F43C128CAFB10046778B /* LookCommand.m */,
 				99C1F598128D79970046778B /* GoCommand.h */,
 				99C1F599128D79970046778B /* GoCommand.m */,
+				9997B5C412A3BCB1006903EC /* UseCommand.h */,
+				9997B5C512A3BCB1006903EC /* UseCommand.m */,
+				99AA90DF12A44BDD002066E1 /* TakeCommand.h */,
+				99AA90E012A44BDD002066E1 /* TakeCommand.m */,
+				99AA914B12A458A9002066E1 /* InventoryCommand.h */,
+				99AA914C12A458A9002066E1 /* InventoryCommand.m */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -246,7 +270,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "TextGame" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* TextGame */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,6 +328,14 @@
 				99C1F5F8128DDE570046778B /* Item.h in Sources */,
 				99C1F5F9128DDE570046778B /* Item.m in Sources */,
 				99C1F636128F3AED0046778B /* Containable.h in Sources */,
+				9997B5C612A3BCB1006903EC /* UseCommand.h in Sources */,
+				9997B5C712A3BCB1006903EC /* UseCommand.m in Sources */,
+				9997B5CA12A3BD56006903EC /* Backpack.h in Sources */,
+				9997B5CB12A3BD56006903EC /* Backpack.m in Sources */,
+				99AA90E112A44BDD002066E1 /* TakeCommand.h in Sources */,
+				99AA90E212A44BDD002066E1 /* TakeCommand.m in Sources */,
+				99AA914D12A458A9002066E1 /* InventoryCommand.h in Sources */,
+				99AA914E12A458A9002066E1 /* InventoryCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

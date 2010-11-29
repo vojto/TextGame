@@ -42,7 +42,7 @@
 	
 	// Items
 	[interface sendMessage:@"Items: "];
-	NSArray *items = [world itemsAt:currentRoom];
+	NSArray *items = [currentRoom items];
 	for (id item in [items objectEnumerator]) {
 		[interface sendMessage:[NSString stringWithFormat:@"      %@", [item name]]];
 	}

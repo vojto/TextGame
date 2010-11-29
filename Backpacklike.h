@@ -11,12 +11,13 @@
 @protocol Backpacklike
 
 // Adding and removing items
--(BOOL)add:(id<Itemlike>)item;
--(id<Itemlike>)getItemWithName:(NSString *)name;
--(id<Itemlike>)removeItemWithName:(NSString *)name;
+-(BOOL)addItem:(id<Itemlike>)item;
+-(id<Itemlike>)itemWithName:(NSString *)itemName;
+-(void)removeItem:(id<Itemlike>)item;
+-(id<Itemlike>)removeItemWithName:(NSString *)itemName;
 
 // Sizes
--(NSInteger)getCapacity;
+-(NSInteger)capacity;
 -(NSInteger)size;
 
 @end
