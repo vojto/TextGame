@@ -8,6 +8,7 @@
 
 #import "Item.h"
 #import "Containable.h"
+#import "NPC.h"
 
 @interface Room : NSObject <Containable> {
 	NSString *name;
@@ -17,6 +18,7 @@
 	Room *westExit;
 	Room *eastExit;
 	NSMutableArray *items;
+	NSMutableArray *npcs;
 }
 
 @property (retain) NSString *name;
@@ -26,9 +28,10 @@
 @property (retain) Room *westExit;
 @property (retain) Room *eastExit;
 @property (retain) NSMutableArray *items;
+@property (retain) NSMutableArray *npcs;
 
-- (void) addItem:(Item *)item;
 - (Item *) itemWithName:(NSString *)name;
 - (void) removeItem:(Item *)item;
+- (NPC *) npcWithName:(NSString *)name;
 
 @end

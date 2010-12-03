@@ -11,12 +11,13 @@
 
 @implementation Room
 
-@synthesize name, description, items;
+@synthesize name, description, items, npcs;
 @synthesize northExit, southExit, eastExit, westExit;
 
 - (id) init {
 	if(self = [super init]) {
 		items = [[NSMutableArray alloc] init];
+		npcs = [[NSMutableArray alloc] init];
 	}
 	return self;
 }
@@ -49,10 +50,6 @@
 	}
 }
 
-- (void) addItem:(Item *)item {
-	[items addObject:item];
-}
-
 - (Item *) itemWithName:(NSString *)itemName {
 	for (Item *item in [items objectEnumerator]) {
 		if ([[item name] isEqualToString:itemName]) {
@@ -64,6 +61,15 @@
 
 - (void) removeItem:(Item *)item {
 	[items removeObjectIdenticalTo:item];
+}
+
+- (NPC *) npcWithName:(NSString *)npcName {
+	for (NPC *npc in [npcs objectEnumerator]) {
+		if ([[npc name] isEqualToString:npcName]) {
+			return npc;
+		}
+	}
+	return nil;
 }
 
 @end

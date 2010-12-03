@@ -8,6 +8,8 @@
 
 #import "Backpack.h"
 #import "Item.h"
+#import "Game.h"
+#import "Backpack.h"
 
 @implementation Backpack
 
@@ -16,6 +18,7 @@
 - (id) init	{
 	if (self = [super init]) {
 		items = [[NSMutableArray alloc] init];
+		capacity = 16;
 	}
 	
 	return self;
@@ -25,7 +28,7 @@
 	return [items count];
 }
 
-- (id<Itemlike>)itemWithName:(NSString *)itemName {
+- (Item *)itemWithName:(NSString *)itemName {
 	for (Item *item in [items objectEnumerator]) {
 		if ([[item name] isEqualToString:itemName]) {
 			return item;
@@ -38,17 +41,22 @@
 	[items removeObjectIdenticalTo:item];
 }
 
-- (id<Itemlike>)removeItemWithName:(NSString *)itemName {
-	id<Itemlike> item = [self itemWithName:itemName];
+- (Item *)removeItemWithName:(NSString *)itemName {
+	Item * item = [self itemWithName:itemName];
 	[self removeItem:item];
 	return item;
 }
 
 - (BOOL) addItem:(id <Itemlike>)item {
+	Game *game = [Game sharedGame];
+	TextInterface *interface = [game textInterface];
+	
 	if ([self size] <= [self capacity]) {
 		[items addObject:item];
+		[interface sendMessage:[NSString stringWithFormat:@"You receive item: %@", [item name]]];
 		return YES;
 	} else {
+		[interface sendMessage:@"No space in your backpack."];
 		return NO;
 	}
 

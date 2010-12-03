@@ -61,6 +61,11 @@
 					 [NSArray arrayWithObjects:@"inventory", @"backpack", @"bp", nil], @"triggers",
 					 @"InventoryCommand", @"className",
 					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Talk to somebody", @"description",
+					 [NSArray arrayWithObjects:@"talk", nil], @"triggers",
+					 @"TalkCommand", @"className",
+					 nil],
 					nil];
 	}
 	return self;

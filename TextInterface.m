@@ -17,6 +17,7 @@
 }
 
 - (NSString *) readMessage {
+	printf("> ");
 	char inputBuffer[200];
 	NSString *input;
 	fgets(inputBuffer, 200, stdin);

@@ -47,6 +47,13 @@
 		[interface sendMessage:[NSString stringWithFormat:@"      %@", [item name]]];
 	}
 	
+	// NPCs
+	[interface sendMessage:@"NPCs: "];
+	NSArray *npcs = [currentRoom npcs];
+	for (id npc in [npcs objectEnumerator]) {
+		[interface sendMessage:[NSString stringWithFormat:@"      %@", [npc name]]];
+	}
+	
 	return GameStatePlaying;
 }
 
