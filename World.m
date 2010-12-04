@@ -11,6 +11,7 @@
 #import "Backpack.h"
 #import "NPC.h"
 #import "NPCInteraction.h"
+#import "ReplaceEffect.h"
 
 @implementation World
 
@@ -32,9 +33,12 @@
 	[rooms addObject:forest];
 	// Items
 	Item *lockedChest = [[Item alloc] init];
-	[lockedChest setName:@"LockedChest"];
-	[lockedChest setDescription:@"This chest is locked."];
+	lockedChest.name = @"LockedChest";
+	lockedChest.description = @"This chest is locked.";
 	[forest.items addObject:lockedChest];
+	Item *sword = [[Item alloc] init];
+	sword.name = @"Sword";
+	sword.description = @"Long and heavy sword. You can hardly hold it in one hand.";
 
 
 	// ------------------------------------------------------
@@ -50,18 +54,25 @@
 	Item *rustyKey = [[Item alloc] init];
 	rustyKey.name = @"RustyKey";
 	rustyKey.description = @"Really old key.";
+	ReplaceEffect *rustyKeyEffect = [[ReplaceEffect alloc] init];
+	rustyKeyEffect.message = @"You stick rusty key into your locked chest ...";
+	rustyKeyEffect.requirementMissingMessage = @"This key looks like it could fit into a chest or something.";
+	rustyKeyEffect.requirement = lockedChest;
+	rustyKeyEffect.replacement = sword;
+	[rustyKey addEffect:rustyKeyEffect];
 	// NPCs
 	NPC *keymaster = [[NPC alloc] init];
 	keymaster.name = @"Keymaster";
+	keymaster.defaultMessage = @"I make keys.";
 	NPCInteraction *keymasterInteraction01 = [[NPCInteraction alloc] init];
 	keymasterInteraction01.message = @"I make keys. Tell me what kind of key you need and I might be able to help you.";
-	[keymaster.interactions addObject:keymasterInteraction01];
+	[keymaster addInteraction:keymasterInteraction01];
 	NPCInteraction *keymasterInteraction02 = [[NPCInteraction alloc] init];
 	keymasterInteraction02.message = @"Man, that chest looks pretty old. You're lucky that I kept this really old key, I wanted to throw it the fuck away.";
 	keymasterInteraction02.failureMessage = @"I don't think there's anything I can do for you right now.";
 	[keymasterInteraction02.requiredItems addObject:lockedChest];
 	[keymasterInteraction02.grantedItems addObject:rustyKey];
-	[keymaster.interactions addObject:keymasterInteraction02];
+	[keymaster addInteraction:keymasterInteraction02];
 	[city.npcs addObject:keymaster];
 	// ------------------------------------------------------
 	
@@ -76,17 +87,7 @@
 	// Current Room
 	currentRoom = forest;
 	
-	// Items
-	
-	
-	Item *chest = [[Item alloc] init];
-	[chest setName:@"Chest"];
-	
-	// todo: key
-	
-	// ReplaceEffect *chestReplace = [[ReplaceEffect alloc] init];
-	// [chestReplace setReplacement:chest];
-	// [lockedChest addEffect:chestReplace inCombinationWith:key];
+
 }
 
 - (void) addItem:(Item *)item at:(id<Containable>)container {

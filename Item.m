@@ -13,12 +13,29 @@
 
 @synthesize name, description;
 
-- (void) useWithArguments:(NSArray *)arguments {
+- (id) init {
+	if (self = [super init]) {
+		effects = [[NSMutableArray alloc] init];
+	}
+	
+	return self;
+}
+
+- (void) addEffect:(Effect *)effect {
+	[effects addObject:effect];
+}
+
+- (void) use {
 	Game *game = [Game sharedGame];
 	TextInterface *interface = [game textInterface];
-	Backpack *backpack = [game backpack];
 	
-	[interface sendMessage:description];
+	if ([effects count] == 0) {
+		[interface sendMessage:@"Nothing special happens."];
+	}
+	
+	for (id effect in [effects objectEnumerator]) {
+		[effect execute];
+	}
 }
 
 @end

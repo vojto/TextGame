@@ -37,7 +37,7 @@
 	return nil;
 }
 
-- (void)removeItem:(id <Itemlike>)item {
+- (void)removeItem:(Item *)item {
 	[items removeObjectIdenticalTo:item];
 }
 
@@ -47,7 +47,7 @@
 	return item;
 }
 
-- (BOOL) addItem:(id <Itemlike>)item {
+- (BOOL) addItem:(Item *)item {
 	Game *game = [Game sharedGame];
 	TextInterface *interface = [game textInterface];
 	
@@ -60,6 +60,14 @@
 		return NO;
 	}
 
+}
+
+- (BOOL) hasItem:(Item *)item {
+	if ([items containsObject:item]) {
+		return YES;
+	} else {
+		return NO;
+	}
 }
 
 @end

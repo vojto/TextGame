@@ -14,7 +14,7 @@
 
 @implementation NPCInteraction
 
-@synthesize message, failureMessage, requiredItems, grantedItems, takesRequiredItems;
+@synthesize npc, message, failureMessage, requiredItems, grantedItems, takesRequiredItems;
 
 - (id) init {
 	if (self = [super init]) {

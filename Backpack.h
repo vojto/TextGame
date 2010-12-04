@@ -18,4 +18,6 @@
 @property (nonatomic) NSInteger capacity;
 @property (retain, nonatomic) NSMutableArray *items;
 
+- (BOOL) hasItem:(Item *)item;
+
 @end

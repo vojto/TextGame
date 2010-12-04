@@ -7,8 +7,12 @@
 //
 
 #import "Item.h"
+#import "NPC.h"
+
+@class NPC;
 
 @interface NPCInteraction : NSObject {
+	NPC *npc;
 	NSString *message;
 	NSString *failureMessage;
 	NSMutableArray *requiredItems;
@@ -16,6 +20,7 @@
 	BOOL takesRequiredItems;
 }
 
+@property (retain) NPC *npc;
 @property (retain) NSString *message;
 @property (retain) NSString *failureMessage;
 @property (retain) NSMutableArray *requiredItems;

@@ -17,8 +17,6 @@
 	
 	// Parse arguments to find item name(s)
 	NSString *itemName = [params objectAtIndex:1];
-	NSRange argumentRange = NSMakeRange(2, [params count]-2);
-	NSArray *otherArguments = [params objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:argumentRange]];
 
 	if (!itemName) {
 		[textInterface sendMessage:@"What would you like to use?"];
@@ -28,7 +26,7 @@
 	Item *item = [backpack itemWithName:itemName];
 	
 	if (item) {
-		[item useWithArguments:otherArguments];
+		[item use];
 	} else {
 		[textInterface sendMessage:[NSString stringWithFormat:@"There's no item with name %@ in your backpack.", itemName]];
 	}

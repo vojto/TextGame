@@ -7,17 +7,21 @@
 //
 
 #import "Itemlike.h"
+#import "Effect.h"
 
 @interface Item : NSObject <Itemlike> {
 
 NSString *name;
 NSString *description;
+NSMutableArray *effects;
 
 }
 
 @property (retain) NSString *name;
 @property (retain) NSString *description;
+@property (retain) NSMutableArray *effects;
 
-- (void) useWithArguments:(NSArray *)arguments;
+- (void) use;
+- (void) addEffect:(Effect *)effect;
 
 @end

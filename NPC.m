@@ -14,15 +14,19 @@
 
 @implementation NPC
 
-@synthesize name, interactions, isHostile, nextInteraction;
+@synthesize name, defaultMessage, isHostile;
 
 - (id) init {
 	if (self = [super init]) {
 		interactions = [[NSMutableArray alloc] init];
-		nextInteraction = 0;
 	}
 	
 	return self;
+}
+
+- (void) addInteraction:(NPCInteraction *)interaction {
+	interaction.npc = self;
+	[interactions addObject:interaction];
 }
 
 - (void) interact {
@@ -31,20 +35,13 @@
 	TextInterface *interface	= [game textInterface];
 	
 	if ([interactions count] == 0) {
-		[interface sendMessage:@"I can't speak."];
+		[interface sendMessage:defaultMessage];
 		return;
 	}
 	
-	interaction = [interactions objectAtIndex:nextInteraction];
+	interaction = [interactions objectAtIndex:0];
 	if ([interaction execute]) {
-		[self progressToNextInteraction];
-	}
-}
-
-- (void) progressToNextInteraction {
-	nextInteraction += 1;
-	if (nextInteraction > [interactions count]-1) {
-		nextInteraction = 0;
+		[interactions removeObjectAtIndex:0];
 	}
 }
 
