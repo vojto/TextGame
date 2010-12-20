@@ -11,7 +11,7 @@
 
 @implementation Item
 
-@synthesize name, description;
+@synthesize name, description, power;
 
 - (id) init {
 	if (self = [super init]) {
@@ -34,7 +34,7 @@
 	}
 	
 	for (id effect in [effects objectEnumerator]) {
-		[effect execute];
+		[effect apply];
 	}
 }
 

@@ -7,12 +7,13 @@
 //
 
 #include "Game.h"
+#include "Player.h"
 
 static Game *sharedGame = nil;
 
 @implementation Game
 
-@synthesize textInterface, commandRecognizer, world, backpack;
+@synthesize textInterface, commandRecognizer, world, backpack, player, gameState;
 
 + (Game *) sharedGame {
 	@synchronized(self) {
@@ -28,6 +29,8 @@ static Game *sharedGame = nil;
 		commandRecognizer = [[CommandRecognizer alloc] init];
 		world = [[World alloc] init];
 		backpack = [[Backpack alloc] init];
+		player = [[Player alloc] init];
+		player.basePower = 10;
 	}
 	return self;
 }

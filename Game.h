@@ -12,6 +12,7 @@
 #import "TextInterface.h"
 #import "World.h"
 #import "Backpack.h"
+#import "Player.h"
 
 @interface Game : NSObject <Gamelike> {
 	TextInterface *commandInterface;
@@ -19,11 +20,14 @@
 	CommandRecognizer *commandRecognizer;
 	World *world;
 	Backpack *backpack;
+	Player *player;
 }
 @property (retain) TextInterface *textInterface;
 @property (retain) CommandRecognizer *commandRecognizer;
 @property (retain) World *world;
 @property (retain) Backpack *backpack;
+@property Player *player;
+@property GameState gameState;
 
 + (Game *) sharedGame;
 

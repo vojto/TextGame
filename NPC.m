@@ -19,6 +19,7 @@
 - (id) init {
 	if (self = [super init]) {
 		interactions = [[NSMutableArray alloc] init];
+		isHostile = NO;
 	}
 	
 	return self;
@@ -33,7 +34,7 @@
 	NPCInteraction *interaction;
 	Game *game					= [Game sharedGame];
 	TextInterface *interface	= [game textInterface];
-	
+		
 	if ([interactions count] == 0) {
 		[interface sendMessage:defaultMessage];
 		return;

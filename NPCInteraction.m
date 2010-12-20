@@ -39,6 +39,18 @@
 	return YES;
 }
 
+- (void) takeRequiredItems {
+	Game *game = [Game sharedGame];
+	Backpack *backpack = [game backpack];
+	
+	for (id requiredItem in [requiredItems objectEnumerator]) {
+		if ([backpack hasItem:requiredItem]) {
+			[backpack removeItem:requiredItem];
+		}
+	}
+}
+
+
 - (BOOL) execute {
 	Game *game					= [Game sharedGame];
 	Backpack *backpack			= [game backpack];
@@ -47,6 +59,9 @@
 	BOOL allowed = [self isAllowed];
 
 	if (allowed) {
+		if (takesRequiredItems) {
+			[self takeRequiredItems];
+		}
 		[interface sendMessage:message];
 		if ([grantedItems count] != 0) {
 			for (id item in [grantedItems objectEnumerator]) {

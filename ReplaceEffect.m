@@ -16,13 +16,14 @@
 
 @synthesize requirement, replacement, requirementMissingMessage;
 
-- (void) execute {
+- (void) apply {
 	Game *game			= [Game sharedGame];
 	Backpack *backpack	= [game backpack];
 	TextInterface *interface = [game textInterface];
 	
 	if ([backpack hasItem:requirement]) {
 		[interface sendMessage:message];
+		[backpack removeItem:item];
 		[backpack removeItem:requirement];
 		[backpack addItem:replacement];
 	} else {

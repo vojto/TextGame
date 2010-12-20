@@ -10,16 +10,13 @@
 #import "Item.h"
 
 @interface ReplaceEffect : Effect {
-
-Item *requirement;
-Item *replacement;
-NSString *requirementMissingMessage;
-
+	Item *requirement;
+	Item *replacement;
+	NSString *requirementMissingMessage;
 }
 
 @property (retain) Item *requirement;
 @property (retain) Item *replacement;
 @property (retain) NSString *requirementMissingMessage;
-
 
 @end

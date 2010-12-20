@@ -66,6 +66,11 @@
 					 [NSArray arrayWithObjects:@"talk", nil], @"triggers",
 					 @"TalkCommand", @"className",
 					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Attack", @"description",
+					 [NSArray arrayWithObjects:@"attack", nil], @"triggers",
+					 @"AttackCommand", @"className",
+					 nil],
 					nil];
 	}
 	return self;

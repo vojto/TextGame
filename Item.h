@@ -9,17 +9,21 @@
 #import "Itemlike.h"
 #import "Effect.h"
 
+@class Effect;
+
 @interface Item : NSObject <Itemlike> {
 
 NSString *name;
 NSString *description;
 NSMutableArray *effects;
+NSInteger power;
 
 }
 
 @property (retain) NSString *name;
 @property (retain) NSString *description;
 @property (retain) NSMutableArray *effects;
+@property NSInteger power;
 
 - (void) use;
 - (void) addEffect:(Effect *)effect;

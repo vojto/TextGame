@@ -7,16 +7,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Item.h"
 
+@class Item;
 
 @interface Effect : NSObject {
 
-NSString *message;
+	NSString *message;
+	Item *item;
 
 }
 
 @property (retain) NSString *message;
+@property (retain) Item *item;
 
-- (void) execute;
+- (id) initWithItem:(Item *)item;
+- (void) apply;
 
 @end

@@ -11,9 +11,17 @@
 
 @implementation Effect
 
-@synthesize message;
+@synthesize message, item;
 
-- (void) execute {
+- (id) initWithItem:(Item *)anItem {
+	if (self = [super init]) {
+		self.item = anItem;
+	}
+	
+	return self;
+}
+
+- (void) apply {
 	
 }
 

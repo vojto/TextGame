@@ -29,5 +29,6 @@
 
 - (BOOL) isAllowed;
 - (BOOL) execute;
+- (void) takeRequiredItems;
 
 @end
