@@ -6,8 +6,9 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#include "Game.h"
-#include "Player.h"
+#import "Game.h"
+#import "Player.h"
+#import "History.h"
 
 static Game *sharedGame = nil;
 
@@ -31,6 +32,7 @@ static Game *sharedGame = nil;
 		backpack = [[Backpack alloc] init];
 		player = [[Player alloc] init];
 		player.basePower = 10;
+		history = [[History alloc] init];
 	}
 	return self;
 }
@@ -39,14 +41,15 @@ static Game *sharedGame = nil;
 	[textInterface sendMessage:@"Welcome to The Game!"];
 	gameState = GameStatePlaying;
 	while(gameState == GameStatePlaying) {
+		NSLog(@"GameState = %d", gameState);
 		[self readCommand];
 	}
-	[textInterface sendMessage:[NSString stringWithFormat:@"# Game ended with state: %d", gameState]];
 }
 
 - (void) readCommand {
 	NSString *message;
 	message = [textInterface readMessage];
+	[history addMessage:message];
 	[self executeCommand:[self processCommand:message]];
 }
 
@@ -66,5 +69,12 @@ static Game *sharedGame = nil;
 	gameState = [command execute];
 }
  
+- (void) save {
+	[history save:@"/Users/vojto/.text_game"];
+}
+
+- (void) load {
+	[history load:@"/Users/vojto/.text_game"];
+}
 
 @end

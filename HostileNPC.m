@@ -22,7 +22,7 @@
 	return self;
 }
 
-- (void) attack {
+- (BOOL) attack {
 	Game *game					= [Game sharedGame];
 	TextInterface *interface	= [game textInterface];
 	Backpack *backpack			= [game backpack];
@@ -30,7 +30,7 @@
 	NSInteger playerPower = game.player.power;
 	if (power > playerPower) {
 		[interface sendMessage:[NSString stringWithFormat:@"You fall on the ground being killed by %@ ...", name]];
-		game.gameState = GameStateQuit;
+		return NO;
 	} else {
 		[interface sendMessage:[NSString stringWithFormat:@"%@ drew his last breath.", name]];
 		if ([carriedItems count] != 0) {
@@ -38,6 +38,7 @@
 				[backpack addItem:item];
 			}
 		}
+		return YES;
 	}
 	
 	

@@ -18,6 +18,6 @@
 @property NSInteger power;
 @property (retain) NSMutableArray *carriedItems;
 
-- (void) attack;
+- (BOOL) attack;
 
 @end

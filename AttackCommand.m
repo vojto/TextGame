@@ -36,8 +36,12 @@
 		return GameStatePlaying;
 	}
 	
-	[npc attack];
-	return GameStatePlaying;
+	if ([npc attack] == YES) { // Killed it
+		return GameStatePlaying;
+	} else { // Died
+		return GameStateQuit;
+	}
+	
 }
 
 @end

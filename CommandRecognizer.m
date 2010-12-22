@@ -57,6 +57,11 @@
 					 @"TakeCommand", @"className",
 					 nil],
 					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Put something", @"description",
+					 [NSArray arrayWithObjects:@"put", nil], @"triggers",
+					 @"PutCommand", @"className",
+					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
 					 @"Show stuff in your inventory", @"description",
 					 [NSArray arrayWithObjects:@"inventory", @"backpack", @"bp", nil], @"triggers",
 					 @"InventoryCommand", @"className",
@@ -70,6 +75,16 @@
 					 @"Attack", @"description",
 					 [NSArray arrayWithObjects:@"attack", nil], @"triggers",
 					 @"AttackCommand", @"className",
+					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Save game", @"description",
+					 [NSArray arrayWithObjects:@"save", nil], @"triggers",
+					 @"SaveCommand", @"className",
+					 nil],
+					[NSDictionary dictionaryWithObjectsAndKeys:
+					 @"Load game", @"description",
+					 [NSArray arrayWithObjects:@"load", nil], @"triggers",
+					 @"LoadCommand", @"className",
 					 nil],
 					nil];
 	}

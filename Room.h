@@ -32,6 +32,7 @@
 
 - (Item *) itemWithName:(NSString *)name;
 - (void) removeItem:(Item *)item;
+
 - (NPC *) npcWithName:(NSString *)name;
 
 @end

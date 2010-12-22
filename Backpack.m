@@ -59,7 +59,6 @@
 		[interface sendMessage:@"No space in your backpack."];
 		return NO;
 	}
-
 }
 
 - (BOOL) hasItem:(Item *)item {
