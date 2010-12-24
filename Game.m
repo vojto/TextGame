@@ -53,10 +53,10 @@ static Game *sharedGame = nil;
 	[self executeCommand:[self processCommand:message]];
 }
 
-- (id<Commandlike>) processCommand:(NSString *)message {
+- (Command *) processCommand:(NSString *)message {
 	NSArray *params = [message componentsSeparatedByString:@" "];
 	NSString *commandText = [params objectAtIndex:0];
-	id<Commandlike> command;
+	Command *command;
 	
 	command = [commandRecognizer recognizeCommandForText:commandText];
 	[command setParams:params];
@@ -64,7 +64,7 @@ static Game *sharedGame = nil;
 	return command;
 }
 
-- (void) executeCommand:(id<Commandlike>)command {
+- (void) executeCommand:(Command *)command {
 	[command setGame:self];
 	gameState = [command execute];
 }

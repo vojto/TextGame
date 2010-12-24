@@ -10,8 +10,6 @@
 
 @implementation TextInterface
 
-@synthesize delegate;
-
 - (void) sendMessage: (NSString *) message {
 	printf("%s\n", [message UTF8String]);
 }

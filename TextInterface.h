@@ -6,12 +6,28 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-@interface TextInterface : NSObject {
-	id delegate;
-}
-@property (retain) id delegate;
+/*! @header TextInterface.h
+	This header describes class TextInterface
+*/
 
+/*!
+	This class is used for input/output
+*/
+@interface TextInterface : NSObject {
+}
+
+/*!
+	Sends message for user to see.
+	@param message Message
+*/
 - (void) sendMessage: (NSString *) message;
+
+/*!
+	Synchronously reads next message. Synchronously
+	means program execution is paused until a new message
+	is entered.
+	@return Message entered by user.
+*/
 - (NSString *) readMessage;
 
 @end

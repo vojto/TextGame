@@ -91,8 +91,8 @@
 	return self;
 }
 
-- (id<Commandlike>) recognizeCommandForText:(NSString *) commandText {
-	id<Commandlike> command;
+- (Command *) recognizeCommandForText:(NSString *) commandText {
+	Command *command;
 	
 	NSArray *triggers;
 	NSString *className;
