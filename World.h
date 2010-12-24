@@ -11,7 +11,6 @@
 */
 
 #import "Backpack.h"
-#import "Containable.h"
 #import "Room.h"
 
 /*!

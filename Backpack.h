@@ -10,6 +10,7 @@
 	@discussion This header describes class Backpack
 */
 
+#import <Foundation/Foundation.h>
 #import "Item.h"
 
 /*!

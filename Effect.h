@@ -10,7 +10,7 @@
 	@discussion Header file describing class Effect
 */
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import "Item.h"
 
 @class Item;

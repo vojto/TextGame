@@ -11,13 +11,12 @@
 */
 
 #import "Item.h"
-#import "Containable.h"
 #import "NPC.h"
 
 /*!
 	This class represents one Room in World. 
 */
-@interface Room : NSObject <Containable> {
+@interface Room : NSObject {
 	NSString *name;
 	NSString *description;
 	Room *northExit;

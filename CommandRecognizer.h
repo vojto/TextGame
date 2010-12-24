@@ -10,6 +10,7 @@
 	@discussion This header file describes class CommandRecognizer.
 */
 
+#import <Foundation/Foundation.h>
 #import "Command.h"
 
 @class Command;

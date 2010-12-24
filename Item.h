@@ -10,7 +10,7 @@
 	This header file describes class Item
 */
 
-#import "Itemlike.h"
+#import <Foundation/Foundation.h>
 #import "Effect.h"
 
 @class Effect;
@@ -18,7 +18,7 @@
 /*!
 	This class represents Item in the world
 */
-@interface Item : NSObject <Itemlike> {
+@interface Item : NSObject {
 
 NSString *name;
 NSString *description;
