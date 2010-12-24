@@ -33,5 +33,5 @@ VersionCommand.m \
 World.m \
 TextGame.m
 CFLAGS = -include TextGame_Prefix.pch
-
+TextGame_OBJCFLAGS = -fobjc-nonfragile-abi
 include $(GNUSTEP_MAKEFILES)/tool.make
