@@ -30,12 +30,13 @@
 	
 	if (item) {
 		[textInterface sendMessage:[NSString stringWithFormat:@"Taking item with name %@.", [item name]]];
+		
+		[backpack addItem:item];
+		[room removeItem:item];
 	} else {
 		[textInterface sendMessage:[NSString stringWithFormat:@"There's nothing like %@ in this room.", itemName]];
 	}
 
-	[backpack addItem:item];
-	[room removeItem:item];
 	// Wouldn't it make sense if adding item to backpack
 	// would automatically remove it from its room?
 	// That would require us to think also about getting

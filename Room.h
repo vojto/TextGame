@@ -79,4 +79,29 @@
 */
 - (NPC *) npcWithName:(NSString *)name;
 
+/*!
+	Sets north exit to room
+	@param room Room
+	param isOneWay If set to NO, opposite exit will be created too.
+*/
+- (void) setNorthExit:(Room *)room oneWay:(BOOL)isOneWay;
+/*!
+	Sets south exit to room
+	@param room Room
+	param isOneWay If set to NO, opposite exit will be created too.
+*/
+- (void) setSouthExit:(Room *)room oneWay:(BOOL)isOneWay;
+/*!
+	Sets west exit to room
+	@param room Room
+	param isOneWay If set to NO, opposite exit will be created too.
+*/
+- (void) setWestExit:(Room *)room oneWay:(BOOL)isOneWay;
+/*!
+	Sets east exit to room
+	@param room Room
+	param isOneWay If set to NO, opposite exit will be created too.
+*/
+- (void) setEastExit:(Room *)room oneWay:(BOOL)isOneWay;
+
 @end

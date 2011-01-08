@@ -22,30 +22,49 @@
 	return self;
 }
 
+#pragma mark -
+#pragma mark Exits setters and getters
+
 - (void) setNorthExit:(Room *)room {
+	[self setNorthExit:room oneWay:NO];
+}
+
+- (void) setSouthExit:(Room *)room {
+	[self setSouthExit:room oneWay:NO];
+}
+
+- (void) setWestExit:(Room *)room {
+	[self setWestExit:room oneWay:NO];
+}
+
+- (void) setEastExit:(Room *)room {
+	[self setEastExit:room oneWay:NO];
+}
+
+- (void) setNorthExit:(Room *)room oneWay:(BOOL)isOneWay {
 	northExit = room;
-	if ([room southExit] != self) {
+	if (isOneWay == NO && [room southExit] != self) {
 		[room setSouthExit:self];
 	}
 }
 
-- (void) setSouthExit:(Room *)room {
+- (void) setSouthExit:(Room *)room oneWay:(BOOL)isOneWay {
 	southExit = room;
-	if ([room northExit] != self) {
+	if (isOneWay == NO && [room northExit] != self) {
 		[room setNorthExit:self];
 	}
 }
 
-- (void) setWestExit:(Room *)room {
+- (void) setWestExit:(Room *)room oneWay:(BOOL)isOneWay {
 	westExit = room;
-	if ([room eastExit] != self) {
+	if (isOneWay == NO && [room eastExit] != self) {
 		[room setEastExit:self];
 	}
 }
 
-- (void) setEastExit:(Room *)room {
+- (void) setEastExit:(Room *)room oneWay:(BOOL)isOneWay {
 	eastExit = room;
-	if ([room westExit] != self) {
+	if (isOneWay == NO && [room westExit] != self) {
 		[room setWestExit:self];
 	}
 }

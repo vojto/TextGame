@@ -77,6 +77,8 @@
 */
 - (void) readCommand;
 
+- (void) executeMessage:(NSString *)message;
+
 /*!
 	Processes NSString with command to be executed
 	and executes it.

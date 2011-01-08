@@ -57,7 +57,8 @@
 //	
 	NSArray *historyMessages = [history componentsSeparatedByString:@"\n"];
 	for (NSString *message in [historyMessages objectEnumerator]) {
-		[game executeCommand:[game processCommand:message]];
+		[game.textInterface sendMessage:[NSString stringWithFormat:@"> %@", message]];
+		[game executeMessage:message];
 	}
 }
 

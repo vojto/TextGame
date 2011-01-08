@@ -9,6 +9,8 @@
 #import "Game.h"
 #import "Player.h"
 #import "History.h"
+#import "LoadCommand.h"
+#import "SaveCommand.h"
 
 static Game *sharedGame = nil;
 
@@ -49,8 +51,15 @@ static Game *sharedGame = nil;
 - (void) readCommand {
 	NSString *message;
 	message = [textInterface readMessage];
-	[history addMessage:message];
-	[self executeCommand:[self processCommand:message]];
+	[self executeMessage:message];
+}
+
+- (void) executeMessage:(NSString *)message {
+	Command *command = [self processCommand:message];
+	if (![command isKindOfClass:[LoadCommand class]] && ![command isKindOfClass:[SaveCommand class]]) {
+		[history addMessage:message];
+	}
+	[self executeCommand:command];
 }
 
 - (Command *) processCommand:(NSString *)message {
