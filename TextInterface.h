@@ -10,6 +10,8 @@
 	This header describes class TextInterface
 */
 
+#import <Foundation/Foundation.h>
+
 /*!
 	This class is used for input/output
 */

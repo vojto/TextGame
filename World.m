@@ -373,21 +373,4 @@
 
 }
 
-- (void) addItem:(Item *)item at:(id<Containable>)container {
-	NSDictionary *itemLink = [NSDictionary dictionaryWithObjectsAndKeys:item, @"item",
-							  container, @"container",
-							  nil];
-	[items addObject:itemLink];
-}
-
-- (NSArray *) itemsAt:(id <Containable>)container {
-	NSMutableArray *itemsAtContainer = [[NSMutableArray alloc] init];
-	for(id itemLink in [items objectEnumerator]) {
-		if ([itemLink objectForKey:@"container"] == container) {
-			[itemsAtContainer addObject:[itemLink objectForKey:@"item"]];
-		}
-	}
-	return (NSArray *) itemsAtContainer;
-}
-
 @end

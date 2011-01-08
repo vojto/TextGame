@@ -23,7 +23,7 @@
 	Singleton class representing currently running Game.
 */
 @interface Game : NSObject {
-	TextInterface *commandInterface;
+	TextInterface *textInterface;
 	GameState gameState;
 	CommandRecognizer *commandRecognizer;
 	World *world;

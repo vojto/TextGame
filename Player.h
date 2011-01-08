@@ -11,6 +11,8 @@
 	@discussion This header file describes class Player
 */
 
+#import <Foundation/Foundation.h>
+
 /*!
 	This class represents Player and his attributes.
 */
