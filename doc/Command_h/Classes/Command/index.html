@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>Command</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ascii" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/Command;  name=Command-->
+<a name="//apple_ref/occ/cl/Command"></a><div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="Command">Command</a></h1>
+</td></tr></table><hr><p><b>Superclass:</b> <!-- a logicalPath="//apple_ref/occ/cl/NSObject" -->NSObject<!-- /a --><br>
+<b>Declared In:</b> <a href="../../index.html" target="_top">Command.h</a><br>
+</p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This class represents single command entered and executed
+by player and it's a controlling part of the game.<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/Command/execute" target="_top">-execute</a></tt></dt>
+<dd></dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/occ/instm/Command/execute;   name=Command::execute -->
+<a name="//apple_ref/occ/instm/Command/execute"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="execute">execute</a></h3>
+</td></tr></table><hr><p></p><div class='declaration_indent'>
+<pre>- (<!-- a logicalPath="//apple_ref/occ/cl/GameState //apple_ref/occ/tdef/GameState //apple_ref/occ/tag/GameState //apple_ref/occ/econst/GameState //apple_ref/occ/struct/GameState //apple_ref/occ/clconst/GameState //apple_ref/occ/intf/GameState" --><span class="type">GameState</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/execute //apple_ref/occ/data/execute" --><span class="var">execute</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Return Value</font></h5><p><!-- begin return value -->Returns new GameState
+
+<!-- end return value --></p><h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Executes command
+This is API for synchronous execution of commands
+and thus there's no way to change resulting GameState from outside
+of a command. 
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_props"></a>
+<h2>Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/Command/game" target="_top">game</a></tt></dt>
+<dd></dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/Command/params" target="_top">params</a></tt></dt>
+<dd></dd>
+</dl>
+<hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/Command/game;   name=Command::game -->
+<a name="//apple_ref/occ/instp/Command/game"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="game">game</a></h3>
+</td></tr></table><hr><p><b>Deprecated:</b> <br>
+</p><div class='declaration_indent'>
+<pre>@property (
+    <span class="param">retain</span>) <!-- a logicalPath="//apple_ref/occ/cl/Game //apple_ref/occ/tdef/Game //apple_ref/occ/tag/Game //apple_ref/occ/econst/Game //apple_ref/occ/struct/Game //apple_ref/occ/clconst/Game //apple_ref/occ/intf/Game" --><span class="type">Game</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/game //apple_ref/occ/data/game" --><span class="var">game</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Reference to Game. This is not really needed, since Game
+is now Singleton class.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/Command/params;   name=Command::params -->
+<a name="//apple_ref/occ/instp/Command/params"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="params">params</a></h3>
+</td></tr></table><hr><p></p><div class='declaration_indent'>
+<pre>@property (
+    <span class="param">retain</span>) <!-- a logicalPath="//apple_ref/occ/cl/NSArray //apple_ref/occ/tdef/NSArray //apple_ref/occ/tag/NSArray //apple_ref/occ/econst/NSArray //apple_ref/occ/struct/NSArray //apple_ref/occ/clconst/NSArray //apple_ref/occ/intf/NSArray" --><span class="type">NSArray</span><!-- /a --> <span class="type">*</span><!-- a logicalPath="//apple_ref/occ/econst/params //apple_ref/occ/data/params" --><span class="var">params</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Array of paramaters specified by player.
+<!-- end discussion -->
+<p></p><p>Last Updated: nedeľa, január 09, 2011
+</p></body></html>

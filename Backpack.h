@@ -44,7 +44,7 @@
 -(Item *)itemWithName:(NSString *)itemName;
 /*!
 	Removes item from backpack
-	@param Item Item to be removed
+	@param item Item to be removed
 */
 -(void)removeItem:(Item *)item;
 /*!
