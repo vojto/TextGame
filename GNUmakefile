@@ -1,5 +1,5 @@
 include $(GNUSTEP_MAKEFILES)/common.make
-
+CC=clang
 TOOL_NAME = TextGame
 TextGame_OBJC_FILES = AttackCommand.m\
 Backpack.m\
@@ -33,5 +33,4 @@ UseCommand.m\
 VersionCommand.m\
 World.m
 CFLAGS = -include TextGame_Prefix.pch
-TextGame_OBJCFLAGS = -fobjc-nonfragile-abi
 include $(GNUSTEP_MAKEFILES)/tool.make
