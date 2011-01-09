@@ -14,13 +14,8 @@
 		9908EC5712829757008FC7B1 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 9908EC5512829757008FC7B1 /* Command.m */; };
 		99518171127863D90035E6AA /* TextInterface.h in Sources */ = {isa = PBXBuildFile; fileRef = 9951816F127863D90035E6AA /* TextInterface.h */; };
 		99518172127863D90035E6AA /* TextInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 99518170127863D90035E6AA /* TextInterface.m */; };
-		9951817B127863FA0035E6AA /* Gamelike.h in Sources */ = {isa = PBXBuildFile; fileRef = 9951817A127863FA0035E6AA /* Gamelike.h */; };
-		995181A0127869F60035E6AA /* Backpacklike.h in Sources */ = {isa = PBXBuildFile; fileRef = 9951819F127869F60035E6AA /* Backpacklike.h */; };
 		995181A812789AED0035E6AA /* Game.h in Sources */ = {isa = PBXBuildFile; fileRef = 995181A612789AED0035E6AA /* Game.h */; };
 		995181A912789AED0035E6AA /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 995181A712789AED0035E6AA /* Game.m */; };
-		995181CB12789E3B0035E6AA /* Roomlike.h in Sources */ = {isa = PBXBuildFile; fileRef = 995181CA12789E3B0035E6AA /* Roomlike.h */; };
-		995181CD12789E440035E6AA /* Commandlike.h in Sources */ = {isa = PBXBuildFile; fileRef = 995181CC12789E440035E6AA /* Commandlike.h */; };
-		995181DF12789E860035E6AA /* Itemlike.h in Sources */ = {isa = PBXBuildFile; fileRef = 995181DE12789E860035E6AA /* Itemlike.h */; };
 		9960410512889BD6009515B1 /* HelpCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 9960410312889BD6009515B1 /* HelpCommand.h */; };
 		9960410612889BD6009515B1 /* HelpCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9960410412889BD6009515B1 /* HelpCommand.m */; };
 		9960413F1288A2AD009515B1 /* QuitCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 9960413D1288A2AD009515B1 /* QuitCommand.h */; };
@@ -40,6 +35,16 @@
 		99AA90E212A44BDD002066E1 /* TakeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA90E012A44BDD002066E1 /* TakeCommand.m */; };
 		99AA914D12A458A9002066E1 /* InventoryCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99AA914B12A458A9002066E1 /* InventoryCommand.h */; };
 		99AA914E12A458A9002066E1 /* InventoryCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA914C12A458A9002066E1 /* InventoryCommand.m */; };
+		99AA923312A9428F002066E1 /* NPC.h in Sources */ = {isa = PBXBuildFile; fileRef = 99AA923112A9428F002066E1 /* NPC.h */; };
+		99AA923412A9428F002066E1 /* NPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA923212A9428F002066E1 /* NPC.m */; };
+		99AA925612A94593002066E1 /* TalkCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99AA925412A94593002066E1 /* TalkCommand.h */; };
+		99AA925712A94593002066E1 /* TalkCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA925512A94593002066E1 /* TalkCommand.m */; };
+		99AA927812A949B5002066E1 /* NPCInteraction.h in Sources */ = {isa = PBXBuildFile; fileRef = 99AA927612A949B5002066E1 /* NPCInteraction.h */; };
+		99AA927912A949B5002066E1 /* NPCInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA927712A949B5002066E1 /* NPCInteraction.m */; };
+		99AA92DD12AA2B9C002066E1 /* Effect.h in Sources */ = {isa = PBXBuildFile; fileRef = 99AA92DB12AA2B9C002066E1 /* Effect.h */; };
+		99AA92DE12AA2B9C002066E1 /* Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA92DC12AA2B9C002066E1 /* Effect.m */; };
+		99AA92E312AA2BB0002066E1 /* ReplaceEffect.h in Sources */ = {isa = PBXBuildFile; fileRef = 99AA92E112AA2BB0002066E1 /* ReplaceEffect.h */; };
+		99AA92E412AA2BB0002066E1 /* ReplaceEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AA92E212AA2BB0002066E1 /* ReplaceEffect.m */; };
 		99C1F3B9128C90F20046778B /* CommandsCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3B7128C90F20046778B /* CommandsCommand.h */; };
 		99C1F3BA128C90F20046778B /* CommandsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3B8128C90F20046778B /* CommandsCommand.m */; };
 		99C1F3E9128CA3F60046778B /* World.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F3E7128CA3F60046778B /* World.h */; };
@@ -52,7 +57,20 @@
 		99C1F59B128D79970046778B /* GoCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F599128D79970046778B /* GoCommand.m */; };
 		99C1F5F8128DDE570046778B /* Item.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F5F6128DDE570046778B /* Item.h */; };
 		99C1F5F9128DDE570046778B /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F5F7128DDE570046778B /* Item.m */; };
-		99C1F636128F3AED0046778B /* Containable.h in Sources */ = {isa = PBXBuildFile; fileRef = 99C1F635128F3AED0046778B /* Containable.h */; };
+		99EE0D7B12BF8F3B00295627 /* HostileNPC.h in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0D7912BF8F3B00295627 /* HostileNPC.h */; };
+		99EE0D7C12BF8F3B00295627 /* HostileNPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0D7A12BF8F3B00295627 /* HostileNPC.m */; };
+		99EE0D8712BF911600295627 /* AttackCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0D8512BF911600295627 /* AttackCommand.h */; };
+		99EE0D8812BF911600295627 /* AttackCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0D8612BF911600295627 /* AttackCommand.m */; };
+		99EE0E0312BFEDA300295627 /* Player.h in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0E0112BFEDA300295627 /* Player.h */; };
+		99EE0E0412BFEDA300295627 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0E0212BFEDA300295627 /* Player.m */; };
+		99EE0E7D12C2265800295627 /* PutCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0E7B12C2265800295627 /* PutCommand.h */; };
+		99EE0E7E12C2265800295627 /* PutCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0E7C12C2265800295627 /* PutCommand.m */; };
+		99EE0EA912C22D9000295627 /* History.h in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0EA712C22D9000295627 /* History.h */; };
+		99EE0EAA12C22D9000295627 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0EA812C22D9000295627 /* History.m */; };
+		99EE0EAD12C22E5300295627 /* SaveCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0EAB12C22E5300295627 /* SaveCommand.h */; };
+		99EE0EAE12C22E5300295627 /* SaveCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0EAC12C22E5300295627 /* SaveCommand.m */; };
+		99EE0EEF12C232CA00295627 /* LoadCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0EED12C232CA00295627 /* LoadCommand.h */; };
+		99EE0EF012C232CA00295627 /* LoadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EE0EEE12C232CA00295627 /* LoadCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,13 +95,8 @@
 		9908EC5512829757008FC7B1 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
 		9951816F127863D90035E6AA /* TextInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = TextInterface.h; sourceTree = "<group>"; };
 		99518170127863D90035E6AA /* TextInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInterface.m; sourceTree = "<group>"; };
-		9951817A127863FA0035E6AA /* Gamelike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Gamelike.h; sourceTree = "<group>"; };
-		9951819F127869F60035E6AA /* Backpacklike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Backpacklike.h; sourceTree = "<group>"; };
 		995181A612789AED0035E6AA /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Game.h; sourceTree = "<group>"; };
 		995181A712789AED0035E6AA /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
-		995181CA12789E3B0035E6AA /* Roomlike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Roomlike.h; sourceTree = "<group>"; };
-		995181CC12789E440035E6AA /* Commandlike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Commandlike.h; sourceTree = "<group>"; };
-		995181DE12789E860035E6AA /* Itemlike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Itemlike.h; sourceTree = "<group>"; };
 		9960410312889BD6009515B1 /* HelpCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = HelpCommand.h; sourceTree = "<group>"; };
 		9960410412889BD6009515B1 /* HelpCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpCommand.m; sourceTree = "<group>"; };
 		9960413D1288A2AD009515B1 /* QuitCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = QuitCommand.h; sourceTree = "<group>"; };
@@ -103,6 +116,16 @@
 		99AA90E012A44BDD002066E1 /* TakeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeCommand.m; sourceTree = "<group>"; };
 		99AA914B12A458A9002066E1 /* InventoryCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = InventoryCommand.h; sourceTree = "<group>"; };
 		99AA914C12A458A9002066E1 /* InventoryCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryCommand.m; sourceTree = "<group>"; };
+		99AA923112A9428F002066E1 /* NPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = NPC.h; sourceTree = "<group>"; };
+		99AA923212A9428F002066E1 /* NPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPC.m; sourceTree = "<group>"; };
+		99AA925412A94593002066E1 /* TalkCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = TalkCommand.h; sourceTree = "<group>"; };
+		99AA925512A94593002066E1 /* TalkCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkCommand.m; sourceTree = "<group>"; };
+		99AA927612A949B5002066E1 /* NPCInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = NPCInteraction.h; sourceTree = "<group>"; };
+		99AA927712A949B5002066E1 /* NPCInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCInteraction.m; sourceTree = "<group>"; };
+		99AA92DB12AA2B9C002066E1 /* Effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Effect.h; sourceTree = "<group>"; };
+		99AA92DC12AA2B9C002066E1 /* Effect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect.m; sourceTree = "<group>"; };
+		99AA92E112AA2BB0002066E1 /* ReplaceEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = ReplaceEffect.h; sourceTree = "<group>"; };
+		99AA92E212AA2BB0002066E1 /* ReplaceEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceEffect.m; sourceTree = "<group>"; };
 		99C1F3B7128C90F20046778B /* CommandsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = CommandsCommand.h; sourceTree = "<group>"; };
 		99C1F3B8128C90F20046778B /* CommandsCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandsCommand.m; sourceTree = "<group>"; };
 		99C1F3E7128CA3F60046778B /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = World.h; sourceTree = "<group>"; };
@@ -115,7 +138,20 @@
 		99C1F599128D79970046778B /* GoCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoCommand.m; sourceTree = "<group>"; };
 		99C1F5F6128DDE570046778B /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Item.h; sourceTree = "<group>"; };
 		99C1F5F7128DDE570046778B /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		99C1F635128F3AED0046778B /* Containable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Containable.h; sourceTree = "<group>"; };
+		99EE0D7912BF8F3B00295627 /* HostileNPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = HostileNPC.h; sourceTree = "<group>"; };
+		99EE0D7A12BF8F3B00295627 /* HostileNPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostileNPC.m; sourceTree = "<group>"; };
+		99EE0D8512BF911600295627 /* AttackCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = AttackCommand.h; sourceTree = "<group>"; };
+		99EE0D8612BF911600295627 /* AttackCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackCommand.m; sourceTree = "<group>"; };
+		99EE0E0112BFEDA300295627 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = Player.h; sourceTree = "<group>"; };
+		99EE0E0212BFEDA300295627 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		99EE0E7B12C2265800295627 /* PutCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = PutCommand.h; sourceTree = "<group>"; };
+		99EE0E7C12C2265800295627 /* PutCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PutCommand.m; sourceTree = "<group>"; };
+		99EE0EA712C22D9000295627 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = History.h; sourceTree = "<group>"; };
+		99EE0EA812C22D9000295627 /* History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = History.m; sourceTree = "<group>"; };
+		99EE0EAB12C22E5300295627 /* SaveCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = SaveCommand.h; sourceTree = "<group>"; };
+		99EE0EAC12C22E5300295627 /* SaveCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveCommand.m; sourceTree = "<group>"; };
+		99EE0EED12C232CA00295627 /* LoadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = LoadCommand.h; sourceTree = "<group>"; };
+		99EE0EEE12C232CA00295627 /* LoadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadCommand.m; sourceTree = "<group>"; };
 		C6859EA3029092ED04C91782 /* TextGame.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TextGame.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				995181A112789AB20035E6AA /* Classes */,
-				99518173127863E30035E6AA /* Protocols */,
 				32A70AAB03705E1F00C91783 /* TextGame_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* TextGame.m */,
 			);
@@ -169,22 +204,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		99518173127863E30035E6AA /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				9951817A127863FA0035E6AA /* Gamelike.h */,
-				9951819F127869F60035E6AA /* Backpacklike.h */,
-				995181CA12789E3B0035E6AA /* Roomlike.h */,
-				995181CC12789E440035E6AA /* Commandlike.h */,
-				995181DE12789E860035E6AA /* Itemlike.h */,
-				99C1F635128F3AED0046778B /* Containable.h */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
 		995181A112789AB20035E6AA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				99AA92E012AA2BA5002066E1 /* Effects */,
 				99518170127863D90035E6AA /* TextInterface.m */,
 				9951816F127863D90035E6AA /* TextInterface.h */,
 				9960410212889BC7009515B1 /* Commands */,
@@ -203,6 +226,16 @@
 				99C1F5F7128DDE570046778B /* Item.m */,
 				9997B5C812A3BD56006903EC /* Backpack.h */,
 				9997B5C912A3BD56006903EC /* Backpack.m */,
+				99AA923112A9428F002066E1 /* NPC.h */,
+				99AA923212A9428F002066E1 /* NPC.m */,
+				99AA927612A949B5002066E1 /* NPCInteraction.h */,
+				99AA927712A949B5002066E1 /* NPCInteraction.m */,
+				99EE0D7912BF8F3B00295627 /* HostileNPC.h */,
+				99EE0D7A12BF8F3B00295627 /* HostileNPC.m */,
+				99EE0E0112BFEDA300295627 /* Player.h */,
+				99EE0E0212BFEDA300295627 /* Player.m */,
+				99EE0EA712C22D9000295627 /* History.h */,
+				99EE0EA812C22D9000295627 /* History.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -223,15 +256,36 @@
 				99C1F43B128CAFB10046778B /* LookCommand.h */,
 				99C1F43C128CAFB10046778B /* LookCommand.m */,
 				99C1F598128D79970046778B /* GoCommand.h */,
-				99C1F599128D79970046778B /* GoCommand.m */,
 				9997B5C412A3BCB1006903EC /* UseCommand.h */,
 				9997B5C512A3BCB1006903EC /* UseCommand.m */,
 				99AA90DF12A44BDD002066E1 /* TakeCommand.h */,
 				99AA90E012A44BDD002066E1 /* TakeCommand.m */,
+				99C1F599128D79970046778B /* GoCommand.m */,
 				99AA914B12A458A9002066E1 /* InventoryCommand.h */,
 				99AA914C12A458A9002066E1 /* InventoryCommand.m */,
+				99AA925412A94593002066E1 /* TalkCommand.h */,
+				99AA925512A94593002066E1 /* TalkCommand.m */,
+				99EE0D8512BF911600295627 /* AttackCommand.h */,
+				99EE0D8612BF911600295627 /* AttackCommand.m */,
+				99EE0E7B12C2265800295627 /* PutCommand.h */,
+				99EE0E7C12C2265800295627 /* PutCommand.m */,
+				99EE0EAB12C22E5300295627 /* SaveCommand.h */,
+				99EE0EAC12C22E5300295627 /* SaveCommand.m */,
+				99EE0EED12C232CA00295627 /* LoadCommand.h */,
+				99EE0EEE12C232CA00295627 /* LoadCommand.m */,
 			);
 			name = Commands;
+			sourceTree = "<group>";
+		};
+		99AA92E012AA2BA5002066E1 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				99AA92DB12AA2B9C002066E1 /* Effect.h */,
+				99AA92DC12AA2B9C002066E1 /* Effect.m */,
+				99AA92E112AA2BB0002066E1 /* ReplaceEffect.h */,
+				99AA92E212AA2BB0002066E1 /* ReplaceEffect.m */,
+			);
+			name = Effects;
 			sourceTree = "<group>";
 		};
 		C6859EA2029092E104C91782 /* Documentation */ = {
@@ -295,13 +349,8 @@
 				8DD76F9A0486AA7600D96B5E /* TextGame.m in Sources */,
 				99518171127863D90035E6AA /* TextInterface.h in Sources */,
 				99518172127863D90035E6AA /* TextInterface.m in Sources */,
-				9951817B127863FA0035E6AA /* Gamelike.h in Sources */,
-				995181A0127869F60035E6AA /* Backpacklike.h in Sources */,
 				995181A812789AED0035E6AA /* Game.h in Sources */,
 				995181A912789AED0035E6AA /* Game.m in Sources */,
-				995181CB12789E3B0035E6AA /* Roomlike.h in Sources */,
-				995181CD12789E440035E6AA /* Commandlike.h in Sources */,
-				995181DF12789E860035E6AA /* Itemlike.h in Sources */,
 				9908EC5612829757008FC7B1 /* Command.h in Sources */,
 				9908EC5712829757008FC7B1 /* Command.m in Sources */,
 				9960410512889BD6009515B1 /* HelpCommand.h in Sources */,
@@ -327,7 +376,6 @@
 				99C1F59B128D79970046778B /* GoCommand.m in Sources */,
 				99C1F5F8128DDE570046778B /* Item.h in Sources */,
 				99C1F5F9128DDE570046778B /* Item.m in Sources */,
-				99C1F636128F3AED0046778B /* Containable.h in Sources */,
 				9997B5C612A3BCB1006903EC /* UseCommand.h in Sources */,
 				9997B5C712A3BCB1006903EC /* UseCommand.m in Sources */,
 				9997B5CA12A3BD56006903EC /* Backpack.h in Sources */,
@@ -336,6 +384,30 @@
 				99AA90E212A44BDD002066E1 /* TakeCommand.m in Sources */,
 				99AA914D12A458A9002066E1 /* InventoryCommand.h in Sources */,
 				99AA914E12A458A9002066E1 /* InventoryCommand.m in Sources */,
+				99AA923312A9428F002066E1 /* NPC.h in Sources */,
+				99AA923412A9428F002066E1 /* NPC.m in Sources */,
+				99AA925612A94593002066E1 /* TalkCommand.h in Sources */,
+				99AA925712A94593002066E1 /* TalkCommand.m in Sources */,
+				99AA927812A949B5002066E1 /* NPCInteraction.h in Sources */,
+				99AA927912A949B5002066E1 /* NPCInteraction.m in Sources */,
+				99AA92DD12AA2B9C002066E1 /* Effect.h in Sources */,
+				99AA92DE12AA2B9C002066E1 /* Effect.m in Sources */,
+				99AA92E312AA2BB0002066E1 /* ReplaceEffect.h in Sources */,
+				99AA92E412AA2BB0002066E1 /* ReplaceEffect.m in Sources */,
+				99EE0D7B12BF8F3B00295627 /* HostileNPC.h in Sources */,
+				99EE0D7C12BF8F3B00295627 /* HostileNPC.m in Sources */,
+				99EE0D8712BF911600295627 /* AttackCommand.h in Sources */,
+				99EE0D8812BF911600295627 /* AttackCommand.m in Sources */,
+				99EE0E0312BFEDA300295627 /* Player.h in Sources */,
+				99EE0E0412BFEDA300295627 /* Player.m in Sources */,
+				99EE0E7D12C2265800295627 /* PutCommand.h in Sources */,
+				99EE0E7E12C2265800295627 /* PutCommand.m in Sources */,
+				99EE0EA912C22D9000295627 /* History.h in Sources */,
+				99EE0EAA12C22D9000295627 /* History.m in Sources */,
+				99EE0EAD12C22E5300295627 /* SaveCommand.h in Sources */,
+				99EE0EAE12C22E5300295627 /* SaveCommand.m in Sources */,
+				99EE0EEF12C232CA00295627 /* LoadCommand.h in Sources */,
+				99EE0EF012C232CA00295627 /* LoadCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
