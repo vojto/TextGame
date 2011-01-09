@@ -22,9 +22,7 @@
 	for(Item *item in [game.backpack.items objectEnumerator]) {
 		bonusPower += item.power;
 	}
-		
-	NSLog(@"Base power: %d, Bonus power: %d", basePower, bonusPower);
-	
+			
 	return basePower + bonusPower;
 }
 
