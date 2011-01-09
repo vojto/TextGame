@@ -43,7 +43,6 @@ static Game *sharedGame = nil;
 	[textInterface sendMessage:@"Welcome to The Game!"];
 	gameState = GameStatePlaying;
 	while(gameState == GameStatePlaying) {
-		NSLog(@"GameState = %d", gameState);
 		[self readCommand];
 	}
 }
